@@ -1,5 +1,5 @@
 // Day 01
-// Activity 02
+// Activity 01
 
 
 // wait for the DOM to finish loading

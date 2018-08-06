@@ -1,5 +1,5 @@
 // Day 01
-// Activity 03
+// Activity 01
 
 
 // wait for the DOM to finish loading
@@ -28,4 +28,3 @@
     // empty the display area and display the divs we just created in the display area
 
 
-    

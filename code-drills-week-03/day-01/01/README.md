@@ -17,3 +17,4 @@
 
     > `City`, `State`
 
+![Activity 01](01.gif)
