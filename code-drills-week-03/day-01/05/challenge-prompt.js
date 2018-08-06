@@ -119,11 +119,91 @@ console.log(target);
 
 // ------------------------------------------------------------------
 console.log("==================== Question 07 ====================");
-
-
 // Iterate over the Array of objects:
 // iterating over nested data structures becomes easier when you have a grasp on how to access nested values. 
-// Using the following array of objects, iterate over the array and print the elements in order. 
+// Using the following array of objects, iterate over the array and print the elements in order.
+var toyArrayOfObjects = [  
+  {  
+     "Product":20,
+     "item":"Yo-Yo"
+  },
+  {  
+     "Product":19,
+     "item":"Legos"
+  },
+  {  
+     "Product":18,
+     "item":"Chemistry Set"
+  },
+  {  
+     "Product":17,
+     "item":"Bubble Solution"
+  },
+  {  
+     "Product":16,
+     "item":"Tonka Truck"
+  },
+  {  
+     "Product":15,
+     "item":"Frisbee"
+  },
+  {  
+     "Product":14,
+     "item":"Plarail Toy Train"
+  },
+  {  
+     "Product":13,
+     "item":"Etch A Sketch"
+  },
+  {  
+     "Product":12,
+     "item":"Koosh Ball"
+  },
+  {  
+     "Product":11,
+     "item":"Buzz Lightyear"
+  },
+  {  
+     "Product":10,
+     "item":"Furby"
+  },
+  {  
+     "Product":9,
+     "item":"Tickle Me Elmo"
+  },
+  {  
+     "Product":8,
+     "item":"Beanie Baby"
+  },
+  {  
+     "Product":7,
+     "item":"Teddy Ruxpin"
+  },
+  {  
+     "Product":6,
+     "item":"Slap Bracelet"
+  },
+  {  
+     "Product":5,
+     "item":"Cabbage Patch Kids"
+  },
+  {  
+     "Product":4,
+     "item":"Stretch Armstrong"
+  },
+  {  
+     "Product":3,
+     "item":"Rubik's Cube"
+  },
+  {  
+     "Product":2,
+     "item":"Weebles"
+  },
+  {  
+     "Product":1,
+     "item":"NERF Ball"
+  }
+];
 // The output for each element should be formatted like this:
 
 // Count: 20
@@ -139,9 +219,24 @@ console.log("==================== Question 07 ====================");
 // Item: Bubble Solution
 // *************************
 
+function iterateArrObjects(arrOfObj){
+  // ---------- Your code goes here ----------
 
 
-// BONUS: Reverse it! 
+
+
+
+
+  // ----------- End of your code -----------
+}
+// Calling the function
+iterateArrObjects(toyArrayOfObjects);
+
+// ------------------------------------------------------------------
+console.log("==================== Question 08  ====================");
+// Using the `toyArrayOfObjects` variable from question 7, iterate through the
+// array again, but print all the elements in reverse order. Your output should
+// look like the following: 
 
 // Count: 1
 // Item: NERF Ball
@@ -155,3 +250,16 @@ console.log("==================== Question 07 ====================");
 // Count: 4
 // Item: Stretch Armstrong
 // *************************
+
+function iterateArrObjectsReverse(arrOfObj){
+  // ---------- Your code goes here ----------
+
+
+
+
+
+
+  // ----------- End of your code -----------
+}
+// Calling the function
+iterateArrObjectsReverse(toyArrayOfObjects);
