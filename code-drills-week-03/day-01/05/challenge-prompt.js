@@ -220,14 +220,14 @@ var toyArrayOfObjects = [
 // *************************
 
 function iterateArrObjects(arrOfObj){
-  // ---------- Your code goes here ----------
+  // ---------- Your Code Here ----------
 
 
 
 
 
 
-  // ----------- End of your code -----------
+  // ---------- End of Code Area ----------
 }
 // Calling the function
 iterateArrObjects(toyArrayOfObjects);
@@ -252,14 +252,14 @@ console.log("==================== Question 08  ====================");
 // *************************
 
 function iterateArrObjectsReverse(arrOfObj){
-  // ---------- Your code goes here ----------
+  // ---------- Your Code Here ----------
 
 
 
+  
 
 
-
-  // ----------- End of your code -----------
+  // ---------- End of Code Area ----------
 }
 // Calling the function
 iterateArrObjectsReverse(toyArrayOfObjects);

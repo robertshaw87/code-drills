@@ -2,7 +2,7 @@
 // Activity 01
 
 
-// wait for the DOM to finish loading
+// wait for the DOM to finish loading (document.ready)
 $(function () {
 
   // Create a click listener for the submit button

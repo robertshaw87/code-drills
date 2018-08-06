@@ -215,7 +215,7 @@ var toyArrayOfObjects = [
 // *************************
 
 function iterateArrObjects(arrOfObj){
-  // ---------- Your code goes here ----------
+  // ---------- Your Code Here ----------
 
   for (var i = 0; i < arrOfObj.length; i++) {
     console.log("Count: ", arrOfObj[i].Product);
@@ -223,7 +223,7 @@ function iterateArrObjects(arrOfObj){
     console.log("*************************");
   }
 
-  // ----------- End of your code -----------
+  // ---------- End of Code Area ----------
 }
 // Calling the function
 iterateArrObjects(toyArrayOfObjects);
@@ -248,7 +248,7 @@ console.log("==================== Question 08  ====================");
 // *************************
 
 function iterateArrObjectsReverse(arrOfObj){
-  // ---------- Your code goes here ----------
+  // ---------- Your Code Here ----------
 
   for (var i = arrOfObj.length-1; i >= 0; i--) {
     console.log("Count: ", arrOfObj[i].Product);
@@ -256,7 +256,7 @@ function iterateArrObjectsReverse(arrOfObj){
     console.log("*************************");
   }
 
-  // ----------- End of your code -----------
+  // ---------- End of Code Area ----------
 }
 // Calling the function
 iterateArrObjectsReverse(toyArrayOfObjects);
