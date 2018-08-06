@@ -1,5 +1,5 @@
 // Day 01
-// Activity 01
+// Activity 02
 
 // This function takes in a string and returns a jQuery element.
 // The element should be a button that contains the argument string as both
@@ -8,11 +8,18 @@
 function createButton(str) {
   // ---------- Your Code Here ----------
 
-  var newButton = $("<button>");
-  newButton.addClass("btn btn-light p-2 m-2 content-button");
-  newButton.text(str);
-  newButton.data("content", str);
-  $("#button-area").append(newButton);
+  // create a new button div
+
+
+  // add a class to the button so we can refer to it with our click listener
+
+  
+  // set the text and data of the button to be the argument given to this function
+
+  
+  // add the button div we've been working on to the button area
+
+  
 
   // ---------- End of Code area ----------
 }
@@ -28,8 +35,13 @@ function createButton(str) {
 function displayContent(event) {
   // ---------- Your Code Here ----------
 
-  var text = $(this).data("content");
-  $("#display-area").append(text);
+  // save the data from the button that was clicked. That button will be the
+  // element that calls on this function
+
+  
+  // append the string that was saved in the button to the display area
+
+
 
   // ---------- End of Code area ----------
 }
@@ -41,18 +53,19 @@ function displayContent(event) {
 $(function () {
   // ---------- Your Code Here ----------
 
-  $(document).on("click", ".content-button", displayContent);
+  // create a click listener on the buttons that we generate
+  // and have it call on the `displayContent` function
 
-  $(document).on("click", "#clear-button", function(event) {
-    $("#display-area").empty();
-  });
+  
+  // create a click listener for the "Clear" button. It should
+  // empty the display area
 
-  $(document).on("click", "#submit-button", function(event) {
-    event.preventDefault();
-    var buttonText = $("#user-input").val();
-    $("#user-input").val("");
-    createButton(buttonText);
-  });
+
+  // create a click listener for the "Submit" button. It should
+  // save the string the user input into the form and call on the
+  // createButton function with that string
+
+  
 
   // ---------- End of Code area ----------
 })

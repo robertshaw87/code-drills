@@ -12,7 +12,7 @@
 
   <div class="container">
     <div class="row mt-5">
-      <!-- We display what the user typed into the form in this area -->
+      <!-- We append the values of the buttons we generated in this area -->
       <div class="col text-center" id="display-area"> </div>
     </div>
     <div class="row">
@@ -20,22 +20,20 @@
       <div class="col">
         <form>
           <div class="form-group">
-            <!-- The user inputs text and we output that data to the display area -->
-            <label for="first-name">First Name</label>
-            <input type="text" class="form-control" id="first-name">
-            <label for="last-name">Last Name</label>
-            <input type="text" class="form-control" id="last-name">
-            <label for="occupation">Occupation</label>
-            <input type="text" class="form-control" id="occupation">
-            <label for="city">City</label>
-            <input type="text" class="form-control" id="city">
-            <label for="state">State</label>
-            <input type="text" class="form-control" id="state">
+            <!-- The user inputs text and we create a button in the button-area that displays that text in the display-area when clicked -->
+            <label for="user-input">Create a display button</label>
+            <input type="text" class="form-control" id="user-input">
           </div>
           <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+          <!-- This button clears both the buttons in the button-area below and the text in the display-area above -->
+          <button class="btn btn-danger" id="clear-button">Clear</button>
         </form>
       </div>
       <div class="col-2"></div>
+    </div>
+    <div class="row mt-5">
+      <!-- We add buttons containing the text the user inputs in the form here -->
+      <div class="col d-flex justify-content-center" id="button-area"></div>
     </div>
   </div>
 
@@ -43,6 +41,6 @@
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
     crossorigin="anonymous"></script>
-  <script src="challenge-prompt.js"></script>
+  <script src="challenge-solution.js"></script>
 </body>
 </html>

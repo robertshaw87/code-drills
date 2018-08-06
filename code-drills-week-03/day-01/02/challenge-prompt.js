@@ -1,5 +1,5 @@
 // Day 01
-// Activity 01
+// Activity 02
 
 // This function takes in a string and returns a jQuery element.
 // The element should be a button that contains the argument string as both

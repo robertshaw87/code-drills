@@ -1,12 +1,19 @@
-# Event Listeners and `this`
+# Practice with forms
 
-![Activity 1](01.png)
+### In this activity, we're going to be creating a simple website that allows the user to input their information and updates the webpage with the information they just entered when they submit their form. No code is provided for you, but if you get stuck, there's pseudocode available for you in the hint folder
 
-### In this activity, we're going to building a simple webpage that takes in a user's text input and creates a button with whatever they typed in when they submit. Then, when the user clicks on the newly created button, the text stored within that button is output to a display area.
+* There should be five fields for the user:
+    * First Name
+    * Last Name
+    * Occupation
+    * City
+    * State
 
-* We've provided the html and a skeleton javascript file for you
+* Once the user clicks the submit button, update the DOM with their information. Group the first name and last name together in a line, and group the city and state together in a line:
 
-    * Only code in the areas indicated. You should not have to modify anything outside of those three areas
+    > `First Name` `Last Name`
 
-    * If you need more guidance, there is pseudocode provided for you in the `hint` folder
+    > `Occupation`
+
+    > `City`, `State`
 
