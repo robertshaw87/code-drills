@@ -49,7 +49,7 @@ console.log(toyInventoryObj);
 //   'Mr. Potato Head': 3,
 //   'Wiffle Ball': 1,
 //   'PEZ Dispenser': 1,
-//   Gumby: 1,
+//   'Gumby': 1,
 //   'Hula Hoop': 1,
 //   'Troll Doll': 1,
 //   'Slip n Slide': 1 }
@@ -98,6 +98,7 @@ var toyArray = ["Iron Man vs. Ultron","Iron Man vs. Loki","Park Animals", "Adven
 function toyArrToObj(arrayOfToys){
   
   var toyArrayOfObjs = [];
+
   // ---------- Your Code Here ----------
 
 
@@ -156,8 +157,6 @@ console.log("==================== Question 04  ====================");
 
 // Here is the provided array that contains each of the toy objects that contain the information that you need:  
 
-
-
 toyInventoryArrayOfObjects = [
  {  "title": "Mr. Potato Head", //name of toy
     "toyLine" : "Potato Head Series", //name of toyline
@@ -211,34 +210,46 @@ toyInventoryArrayOfObjects = [
     "stock": 46
  }];
 
-// Iterate over each object in the provided toyInventoryArrayOfObjects and create a custom object: customToyLineObject.
-// The following should console.log the customToyLineObject to terminal
-
-var customObject = createCustomObject(toyInventoryArrayOfObjects)// takes the toyInventoryArrayOfObjects as an argument
-
-console.log(customObject);
-
-
+// Iterate over each object in the provided `toyInventoryArrayOfObjects` and create a custom object: `customToyLineObject`.
+// We can to consolidate the array of toy objects into a toyline object as defined by the instructions above
 function createCustomObject(objectArr){
 
 	customToyLineObj = {};
 
-	
+  // ---------- Your Code Here ----------
+
+
+
+
+
+
+  // ---------- End of Code Area ----------
+
 	return customToyLineObj
 }
 
+// The following should console.log the `customToyLineObject` to terminal
+var customObject = createCustomObject(toyInventoryArrayOfObjects)// takes the `toyInventoryArrayOfObjects` as an argument
+console.log(customObject);
 
+// This is a tester function that will perform a quick spot check to test if your code is working
+function testObject(obj) {
+  if (customObject['Potato Head Series'] && customObject['Adventure Time Series']) {
+    if ((customObject['Potato Head Series'].totalToysInToyLine === 1930) &&
+      (customObject['Potato Head Series'].toyLineToys.length === 7) &&
+      (customObject['Adventure Time Series'].totalToysInToyLine === 116) &&
+      (customObject['Adventure Time Series'].toyLineToys.length === 3))  
+    {
+      return true;
+    }
+  }
+  return false;
+}
 
+// We're going to test your code with the tester function
+// This should console log `true` if the object you made matches up enough with ours
+console.log(testObject(customObject));
 
-// The following should print true
-console.log(customObject['Potato Head Series'].totalToysInToyLine === 1930);
-console.log(customObject['Potato Head Series'].toyLineToys.length === 7);
-console.log(customObject['Adventure Time Series'].totalToysInToyLine === 116);
-console.log(customObject['Adventure Time Series'].toyLineToys.length === 3);
-
-// -----------------------------------------
-// -----------------------------------------
-// -----------------------------------------
 
 
 
