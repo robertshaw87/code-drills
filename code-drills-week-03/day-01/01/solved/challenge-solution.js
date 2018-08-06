@@ -37,7 +37,7 @@ function displayContent(event) {
 
 
 // document.ready shorthand
-// 
+// Put your click listeners here.
 $(function () {
   // ---------- Your Code Here ----------
 

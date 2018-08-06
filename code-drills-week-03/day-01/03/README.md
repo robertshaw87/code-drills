@@ -1,3 +1,3 @@
-# Removing Timers #
+# Practice with timers #
 
-### This activity focuses on removing timers. Remember, in order to be able to remove a timer, you must assign its declaration to a variable. Follow the prompts in the `challenge-prompt.js` file provided. ###
+### This activity will give you more practice with creating and removing timers. The questions are in the `challenge-prompt.js` file we provided. ###
