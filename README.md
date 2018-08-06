@@ -1,4 +1,4 @@
 # code-drills #
 ### Code drills I'm writing for the Full Stack Web Development bootcamp ###
 
-A lot of these drills are meant to just get people typing. I try to throw in at least one interesting question every day.
+I try to mix in a good amount of challenging brain teasers with the exercises that are just meant to get students typing and practicing what they learned in class
