@@ -5,6 +5,7 @@
 // for "Wibble". It should return true if the string has an even number of characters
 // and false if it doesn't
 function checkWibble(str) {
+
   // ---------- Your Code Here ----------
 
 
@@ -15,6 +16,7 @@ function checkWibble(str) {
 
 
   // ----------- End Code Area -----------
+
 }
 
 
@@ -22,6 +24,7 @@ function checkWibble(str) {
 // for "Wobble". It should return true if the string has an odd number of vowels
 // and false if it doesn't
 function checkWobble(str) {
+
   // ---------- Your Code Here ----------
 
 
@@ -32,6 +35,7 @@ function checkWobble(str) {
 
 
   // ----------- End Code Area -----------
+
 }
 
 
@@ -42,6 +46,7 @@ function checkWobble(str) {
 // "WibbleWobble". 
 
 function wibbleWobble(arr) {
+  
   // ---------- Your Code Here ----------
 
 
