@@ -6,7 +6,3 @@
     * Dormitory | Dirty Room
     * The Morse Code | Here Come Dots
     * Astronomer | Moon Starer
-
-* Remember, white spaces are ignored when evaluating anagrams
-
-* There are many ways of solving this activity. If you finish one, can you think of another?

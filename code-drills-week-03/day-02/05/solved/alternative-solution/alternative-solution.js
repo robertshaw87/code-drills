@@ -8,10 +8,20 @@ function anagramCheck (str1, str2) {
 
   // ---------- Your Code Here ----------
 
+  // remove all the white space from both strings
+  str1 = str1.replace(/\s/g, '');
+  str2 = str2.replace(/\s/g, '');
 
+  // convert both strings to lowercase to remove case sensitivity from our logic
+  str1 = str1.toLowerCase();
+  str2 = str2.toLowerCase();
 
+  // sort str1 and str2 into alphabetical order
+  str1 = str1.split("").sort().join("");
+  str2 = str2.split("").sort().join("");
 
-
+  // compare if the two strings are equivalent
+  return (str1 == str2);
 
   // ----------- End Code Area -----------
 

@@ -31,6 +31,6 @@ console.log("==================== Question 04 ====================");
 
 
 console.log("==================== Question 05 ====================");
-// Create a timer that plays a sound after 11 seconds and console logs "Question 5 Completed!"
+// Create a timer that console logs "Question 5 Completed!"
 
 

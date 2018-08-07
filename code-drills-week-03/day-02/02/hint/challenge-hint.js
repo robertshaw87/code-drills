@@ -10,34 +10,37 @@ function checkDivisors(arr) {
   // ---------- Your Code Here ----------
 
   // iterate through the array
-  for (var i = 0; i < arr.length; i++) {
+
+  
     
     // store the current element into a variable
-    var currentElem = arr[i];
+
+    
+
     // for each element within the array, check it against every other element of the array
-    for (var j = 0; j < arr.length; j++) {
+
+    
 
       // store the current element of this nested iteration into a variable
-      var innerElem = arr[j];
+
+      
+      
       // make sure we are not looking at the same element (i and j)
       // and that the current element of the outside iteration is evenly divisible 
       // by the current element of the nested iteration
-      if ((i !== j) && (currentElem % innerElem === 0)) {
+
+      
 
         // if both are true, return true
-        return true
 
-      }
-
-    }
-
-  }
+        
 
   // otherwise, after we've iterated through the entire array, since
   // we haven't broken out of the function by returning true, return false.
   // hitting this line means we've iterated through the entire array without
   // finding any evenly divisible numbers
-  return false
+
+  
 
   // ----------- End Code Area -----------
 

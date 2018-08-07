@@ -9,36 +9,35 @@ function anagramCheck (str1, str2) {
   // ---------- Your Code Here ----------
 
   // remove all the white space from both strings
-  str1 = str1.replace(/\s/g, '');
-  str2 = str2.replace(/\s/g, '');
+
+  
 
   // if the two strings aren't equal in length without white space, then they can't
   // be anagrams of each other
-  if (str1.length !== str2.length) {
-    return false;
-  }
+
+  
 
   // convert both strings to lowercase to remove case sensitivity from our logic
-  str1 = str1.toLowerCase();
-  str2 = str2.toLowerCase();
+
+  
 
   // iterate through the first string
-  for (var i=0; i < str1.length; i++) {
-    // replace the first instance of the current character inside the second string
-    // with an empty string
-    str2 = str2.replace(str1[i], "");
-  }
 
-  // if the second string is empty, then it and the first string are composed of the
-  // same characters. If there was a difference, then the replace method wouldn't have
-  // found a character and the second string would still have characters inside it. We
-  // already checked to make sure the two strings are the same length, so we don't have
-  // to worry about the first string containing extra letters.
-  if (str2.length === 0) {
-    return true;
-  } else {
-    return false
-  }
+  
+    // replace the first instance of the current character inside the second string
+    // with an empty string. We are essentially subtracting characters contained within
+    // the first string from the second string
+
+    
+
+  // Once we've finished our iteration through the first string, if the second string 
+  // is empty, then it and the first string are composed of the same characters. If 
+  // there was a difference, then the replace method wouldn't have found a character 
+  // and the second string would still have characters inside it. We already checked 
+  // to make sure the two strings are the same length, so we don't have to worry about 
+  // the first string containing extra letters.
+
+  
 
   // ----------- End Code Area -----------
 
