@@ -35,16 +35,22 @@ function fizzBuzzDataTypeChecker(dataTypeInput){
 
     //if the argument is an array then call the `dataTypeArray` function with it as an argument
 
+
     //if the argument is an obj then call the `dataTypeObj` function with it as an argument
+
 
     //if the argument is a string then call the `customIsNum` function with it as an argument to see if the string can be converted to an integer
 
-      //if the argument cannot be converted into an integer then call the `consoleLogNonNumber` function with it as an argument
 
-      //if the argument can be converted into an integer then call the `fizzBuzzCalculation` function with it converted to an integer as an argument
+      //if the string argument can be converted into an integer then call the `fizzBuzzCalculation` function with it converted to an integer as an argument
+
+
+      //if the string argument cannot be converted into an integer then call the `consoleLogNonNumber` function with it as an argument
+
 
     //if the argument is an integer, then call the `fizzBuzzCalculation` function with it as an argument
 
+    
     //if the argument is a boolean, then call the `consoleLogNonNumber` function with it as an argument
 
 

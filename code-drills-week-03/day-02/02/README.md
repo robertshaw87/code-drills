@@ -1,0 +1,1 @@
+find if any number is a multiple of another within the array
