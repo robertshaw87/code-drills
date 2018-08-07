@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+
+
+// Fizz Buzz Alpha Part 1: Implement a FizzBuzz Method
+
+// Place Your FizzBuzz Script into a function. 
+// The method should take a single argument: an array of numbers
+// For each number in the Array:
+//    - conditional evaluation of the number, is it  divisible by 3 & 5, puts "FizzBuzz"
+//    - conditional evaluation of the number, is it divisible 5, puts "Buzz"
+
+//     - conditional evaluation of the number, is it  divisible 3, puts "Fuzz"
+
+//     - If the number does not meet the above conditions then the number is puts to screen
+
+
+
+// Solution: 
+function fizzBuzz(numArr){
+    for(var i = 0; i< numArr.length; i++){
+        if(numArr[i] % 5 === 0 && numArr[i] % 3 === 0 ){
+            console.log("FizzBuzz");
+        }else if(numArr[i] % 5 === 0){
+            console.log("Buzz");
+        }else if(numArr[i] % 3 === 0){
+            console.log("Fizz");
+        }else{
+            console.log(numArr[i]);
+        }
+    }
+}
+var array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50];
+fizzBuzz(array)
+
+
+// --------------------------
+// --------------------------
+// --------------------------
+// Fizz Buzz Alpha Super
+
+// Single Method Responsibility: 
+// Well that method met the requirements but is not very reusable. For example what if the data type changed from an Array to a single number? 
+// You could duplicate the method that we created and create a new method for each data type. 
+// After completing it you might find that there is a lot of duplicated code. 
+// Together we are going to build one of the most flexible versions of FizzBuzz that the world has ever seen! 
+
+// Requirements:
+
+// Complete all the requirements for FizzBuzz:
+//  Use these empty methods to Create your program and then call your method with the following argument:
+// Try to break up each method so that each method does exactly one thing. 
+
+
+
+
+// Here is the starter code: 
+
+
+
+function fizzBuzzSuper(dataTypeInput){
+    fizzBuzzDataTypeChecker(dataTypeInput);
+}
+
+function fizzBuzzDataTypeChecker(dataTypeInput){
+    if(Array.isArray(dataTypeInput)){
+        console.log("It is an array");
+    }
+    else if(){
+
+    }
+    // This methods should evaluate what the data type is and send it to one of the following methods
+    // if it is an array then send to dataTypeArray(dataTypeInput)
+    // if it is an hash then send to def data_type_hash(dataTypeInput)  
+    // if it is a string then send to def custom_is_a_i?(input) to see if the the string converted to an interger is a number
+    // if it is a not an integer def print_non_number(input) with the message puts  "'//{input}' IS NOT A NUMBER"
+    // if it is an integer then send to def fizz_buzz_calculation(input) where we chexk to see what it is devidable by
+}
+var dataTypeInput = [];
+fizzBuzzDataTypeChecker(dataTypeInput)
+
+function dataTypeArray(dataTypeInput){
+    //method takes as an argument an array and iterates through it 
+    //sends each element to the def fizz_buzz_data_type_checker(dataTypeInput)
+}
+
+function dataTypeObj(dataTypeInput){
+    //method takes as an argument an hash and iterates through the keys and evaluates #each value
+    // sends each value to the def fizzBuzzDataTypeChecker(dataTypeInput)
+}
+
+function fizzBuzzCalculation(input){
+    // #this method takes an input and evaluates the following:
+    // #conditional evaluation of the user input( is input divisible by 3 & 5?)
+    // #puts "FizzBuzz"
+    // #conditional evaluation of the user input( is input divisible 5?)
+    // #puts "Buzz"
+    // #conditional evaluation of the user input( is input divisible 3?)
+    // #puts "Fuzz"
+    // #conditional evaluation of the user input( if it is not then return user input (number))
+}
+
+
+// The expected output should resemble: 
+
+// Fizz
+// Buzz
+// FizzBuzz
+// 'String / Word' is not a number
+// 44
+
+
+
+
+//--------------------------
+//--------------------------
+//--------------------------
+
+
+// Fizz Buzz Alpha Super Solution:
+
+function fizzBuzzSuper(dataTypeInput){
+    fizzBuzzDataTypeChecker(dataTypeInput);
+}
+
+function fizzBuzzDataTypeChecker(dataTypeInput){
+    
+    if(dataTypeInput instanceof Array){
+     
+        dataTypeArray(dataTypeInput)
+    }else if (dataTypeInput instanceof Object){
+    
+        dataTypeObject(dataTypeInput)
+    }else if(!isNaN(dataTypeInput)){
+        fizzBuzzCalculation(dataTypeInput)
+        // fizz_buzz_calculation(dataTypeInput)
+    }else if(typeof dataTypeInput === 'string'){
+       
+        customIsNum(parseInt(dataTypeInput)) ? fizzBuzzCalculation(parseInt(dataTypeInput)) : consoleLogNonNumber(dataTypeInput)
+    }   
+}
+
+function consoleLogNonNumber(input){
+    console.log(input + " Is not a Number")
+}
+function dataTypeArray(dataTypeArray){
+    for(var i = 0;i < dataTypeArray.length; i++){
+        fizzBuzzDataTypeChecker(dataTypeArray[i])
+    }
+}
+
+
+function dataTypeObject(dataTypeInput){
+    for(var key in dataTypeInput){
+        fizzBuzzDataTypeChecker(dataTypeInput[key])
+    }
+}
+
+function fizzBuzzCalculation(numInput){
+    if(numInput % 5 === 0 && numInput % 3 === 0 ){
+        console.log("FizzBuzz");
+    }else if(numInput % 5 === 0){
+        console.log("Buzz");
+    }else if(numInput % 3 === 0){
+        console.log("Fizz");
+    }else{
+        console.log(numInput);
+    }
+}
+
+function customIsNum(input){
+    // return (typeof input === "number")
+    if(parseInt(input).toString() === input){
+        return true
+    }else {
+        return false
+    }
+}
+
+function consoleLogNonNumber(input){
+    console.log("'" + input + "' is not a number");
+}
+
+var arrayOfElements = [{"chicken":3},5,"15", "String / Word", 44]
+fizzBuzzSuper(arrayOfElements)
+
+// --------------------------
+// --------------------------
+// --------------------------
+
+
+    
+    </script>
+</body>
+</html>
