@@ -4,3 +4,5 @@
 
 * There are several tools that will help greatly in solving this activity
     * look up the `replace` method for strings
+
+* If you require more guidance, the provided javascript file contains pseudocode to follow
