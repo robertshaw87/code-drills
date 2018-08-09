@@ -69,11 +69,14 @@ function prepend(arr, elem) {
 
 // Testing your `prepend` function
 var test1 = [43, 55, 2, 901, 12, 38];
-console.log("The first element of this array should be 79 ", prepend(test1, 79));
+console.log("The first element of the following array should be 79");
+console.log(prepend(test1, 79));
 var test2 = ["Hello", 11, true, "39", [1, 9], 55];
-console.log('The first element of this array should be "Yes" ', prepend(test2, "Yes"));
+console.log('The first element of the following array should be "Yes"');
+console.log(prepend(test2, "Yes"));
 var test3 = ["Array", {a: 23, b: "World"}, 85, false, 3];
-console.log("The first element of this array should be true ", prepend(test3, true));
+console.log("The first element of the following array should be true");
+console.log(prepend(test3, true));
 
 
 
@@ -96,9 +99,11 @@ function addToObject(obj, key, arr) {
 
 // Testing your `addToObject` function
 var test1 = {a: 3, b: "Hello", c: true};
-console.log('The value associated with the key "test1" should be [1, 4] ', addToObject(test1, "test1", [1, 4]));
+console.log('The value associated with the key "test1" should be [1, 4]');
+console.log(addToObject(test1, "test1", [1, 4]));
 var test2 = {keyOne: "Testing", keyTwo: "487", keyThree: 17};
-console.log('The value associated with the key "c" should be [true, "Yes"] ', addToObject(test2, "c", [true, "Yes"]));
+console.log('The value associated with the key "c" in the following object should be [true, "Yes"]');
+console.log(addToObject(test2, "c", [true, "Yes"]));
 
 
 
@@ -122,7 +127,7 @@ function strToArray(str) {
 }
 
 // Testing your `strToArray` function
-// This should console log ["It", "was", "the", "best", "of", "times,"]
+console.log('The following array should be ["It", "was", "the", "best", "of", "times,"]');
 console.log(strToArray("It was the best of times,"));
 // This should console log ["You're", "a", "wizard,"," "Harry!"]
 console.log(strToArray("You're a wizard, Harry!"));
