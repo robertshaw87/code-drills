@@ -155,8 +155,7 @@ function getFullName(firstName, lastName) {
 
   // -------------------- Your Code Here --------------------
 
-
-
+  return firstName + " " + lastName;
 
   // --------------------- End Code Area --------------------
 }
@@ -176,8 +175,7 @@ function getFirstElem(arr) {
 
   // -------------------- Your Code Here --------------------
 
-
-
+  return arr[0];
 
   // --------------------- End Code Area --------------------
 }

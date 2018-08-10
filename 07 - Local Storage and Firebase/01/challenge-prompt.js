@@ -12,6 +12,7 @@ function cubeNum(num) {
   // -------------------- Your Code Here --------------------
 
 
+  
 
 
   // --------------------- End Code Area --------------------
@@ -35,6 +36,7 @@ function twoAverage(num1, num2) {
   // -------------------- Your Code Here --------------------
 
 
+  
 
 
   // --------------------- End Code Area --------------------
@@ -51,32 +53,35 @@ console.log("This should be 10.5 ", twoAverage(11, 10));
 // ------------------------------------------------------------------
 console.log("==================== Question 03 ====================");
 // Write a function `prepend` that takes an array and an element as 
-// arguments and adds the element to the front of the array and returns
-// the updated array. The changes should be made directly to the argument
-// and not to a copy.
+// arguments and adds the element to the front of the array.
+// The changes should be made directly to the argument and should
+// change the array without any reassignment
 
 function prepend(arr, elem) {
 
   // -------------------- Your Code Here --------------------
   
 
+  
 
 
   // --------------------- End Code Area --------------------
 
-  return arr;
 }
 
 // Testing your `prepend` function
 var test1 = [43, 55, 2, 901, 12, 38];
+prepend(test1, 79);
 console.log("The first element of the following array should be 79");
-console.log(prepend(test1, 79));
+console.log(test1);
 var test2 = ["Hello", 11, true, "39", [1, 9], 55];
 console.log('The first element of the following array should be "Yes"');
-console.log(prepend(test2, "Yes"));
+prepend(test2, "Yes");
+console.log(test2);
 var test3 = ["Array", {a: 23, b: "World"}, 85, false, 3];
+prepend(test3, true);
 console.log("The first element of the following array should be true");
-console.log(prepend(test3, true));
+console.log(test3);
 
 
 
@@ -84,35 +89,38 @@ console.log(prepend(test3, true));
 console.log("==================== Question 04 ====================");
 // Write a function `addToObject` that takes an object, a key, and an array  
 // as arguments and adds the array to the object as the value of the given key.
-// Then, return the object.
+// The changes should be made directly to the argument and should
+// change the object without any reassignment
 
 function addToObject(obj, key, arr) {
 
   // -------------------- Your Code Here --------------------
 
 
+  
 
 
   // --------------------- End Code Area --------------------
-  return obj;
 }
 
 // Testing your `addToObject` function
 var test1 = {a: 3, b: "Hello", c: true};
+addToObject(test1, "test1", [1, 4]);
 console.log('The value associated with the key "test1" should be [1, 4]');
-console.log(addToObject(test1, "test1", [1, 4]));
+console.log(test1);
 var test2 = {keyOne: "Testing", keyTwo: "487", keyThree: 17};
+addToObject(test2, "c", [true, "Yes"])
 console.log('The value associated with the key "c" in the following object should be [true, "Yes"]');
-console.log(addToObject(test2, "c", [true, "Yes"]));
+console.log(test2);
 
 
 
 // ------------------------------------------------------------------
 console.log("==================== Question 05 ====================");
 // Write a function `strToArray` that takes a string as the argument and
-// returns an array that consists of every word in that string. Punctuation
-// will count as part of the word it's attached to. If a word appears twice
-// in the string, it should appear twice in the array. 
+// returns an array that consists of every word in that string. Words are
+// delimited by spaces. Punctuation will count as part of the word it's 
+// attached to.
 
 // DO NOT use the `split` method.
 
@@ -123,13 +131,14 @@ function strToArray(str) {
 
 
 
+
   // --------------------- End Code Area --------------------
 }
 
 // Testing your `strToArray` function
 console.log('The following array should be ["It", "was", "the", "best", "of", "times,"]');
 console.log(strToArray("It was the best of times,"));
-// This should console log ["You're", "a", "wizard,"," "Harry!"]
+console.log('The following array should be ["You\'re", "a", "wizard,"," "Harry!"]');
 console.log(strToArray("You're a wizard, Harry!"));
 
 
@@ -144,6 +153,7 @@ function getFullName(firstName, lastName) {
   // -------------------- Your Code Here --------------------
 
 
+  
 
 
   // --------------------- End Code Area --------------------
@@ -163,6 +173,7 @@ console.log("==================== Question 07====================");
 function getFirstElem(arr) {
 
   // -------------------- Your Code Here --------------------
+
 
 
 
