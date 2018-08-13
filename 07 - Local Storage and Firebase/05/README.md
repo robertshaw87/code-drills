@@ -15,6 +15,11 @@ Should return:
 * The skeleton of your function has been provided for you in the `challenge-prompts.js` file.
     * You should not have to change anything outside of the two areas given to you for your code.
 
+* You MUST use the built in `sort` method to sort your array of prime numbers. Do not build your own sort method
+
+* DO NOT use the built in `filter` methods
+
 * Helper functions seperate out small chunks of functionality in order to improve the ease of understanding and writing your logic
     * Space has been provided for you above the main sort function for helper functions
     * While helper functions are not required, they are strongly recommended
+

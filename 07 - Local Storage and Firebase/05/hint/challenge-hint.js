@@ -10,7 +10,8 @@
 //
 // -------------------- Your Code Here --------------------
 
-
+// Write a function that takes in a number and returns true if the
+// argument is a prime number and false otherwise
 
 
 
@@ -23,8 +24,14 @@
 function primeSort(arr) {
   // -------------------- Your Code Here --------------------
 
+  // iterate through the argument and store all the primes in
+  // a new array
 
+  
 
+  // use the `sort` method to sort our prime array in descending
+  // order and then return it.
+  
 
 
   // --------------------- End Code Area --------------------
