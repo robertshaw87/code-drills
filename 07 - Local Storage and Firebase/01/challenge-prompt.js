@@ -120,7 +120,7 @@ console.log("==================== Question 05 ====================");
 // Write a function `strToArray` that takes a string as the argument and
 // returns an array that consists of every word in that string. Words are
 // delimited by spaces. Punctuation will count as part of the word it's 
-// attached to.
+// attached to. Beware of extra spaces in strings! They should be ignored.
 
 // DO NOT use the `split` method.
 
@@ -137,7 +137,7 @@ function strToArray(str) {
 
 // Testing your `strToArray` function
 console.log('The following array should be ["It", "was", "the", "best", "of", "times,"]');
-console.log(strToArray("It was the best of times,"));
+console.log(strToArray("It  was  the  best  of  times,"));
 console.log('The following array should be ["You\'re", "a", "wizard,"," "Harry!"]');
 console.log(strToArray("You're a wizard, Harry!"));
 
