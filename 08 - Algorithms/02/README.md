@@ -6,4 +6,4 @@
 
 * You will not have to change anything outside of the coding area provided to you inside the Javascript file.
 
-* The webpage will call the factorial function upon submit with the input given and output the return to the webpage
+* The webpage will call the factorial function upon submit with the input given and display the return to the webpage

@@ -10,10 +10,16 @@
 function fibonacci(num) {
   // -------------------- Your Code Here --------------------
 
-
-  
-
-  
+    var fib = [];
+    for (var i = 0; i < num; i++) {
+      if (i <= 1) {
+        fib.push(i)
+      } else {
+        var newFib = fib[i-2] + fib[i-1]
+        fib.push(newFib);
+      }
+    }
+    return fib;
   
   // --------------------- End Code Area --------------------
 }
