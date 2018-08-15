@@ -122,8 +122,6 @@ console.log("==================== Question 05 ====================");
 // delimited by spaces. Punctuation will count as part of the word it's 
 // attached to. Beware of extra spaces in strings! They should be ignored.
 
-// DO NOT use the `split` method.
-
 function strToArray(str) {
 
   // -------------------- Your Code Here --------------------

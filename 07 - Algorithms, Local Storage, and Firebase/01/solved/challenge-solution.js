@@ -114,7 +114,6 @@ console.log("==================== Question 05 ====================");
 // delimited by spaces. Punctuation will count as part of the word it's 
 // attached to. Beware of extra spaces in strings! They should be ignored.
 
-// DO NOT use the `split` method.
 
 function strToArray(str) {
 
@@ -134,6 +133,16 @@ function strToArray(str) {
     arr.push(currentWord);
   }
   return arr;
+
+
+  // alternate method
+  // var arr = str.split(" ");
+  // for (var i = 0; i < arr.length; i++) {
+  //   if (arr[i] === "") {
+  //     arr.splice(i, 1);
+  //   }
+  // }
+  // return arr;
 
   // --------------------- End Code Area --------------------
 }
