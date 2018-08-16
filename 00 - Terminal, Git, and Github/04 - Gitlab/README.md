@@ -4,11 +4,51 @@
 
 ### This will be a tutorial on how to utilise the gitlab repository and how to grab the updated class material everyday. There will be 3 sections in this tutorial:
 
-* The first section will be for updating and using a repository you have already downloaded. 
-* The second section will be for resolving and solving errors you run across.
-* The third section is for downloading the repository for the first time or if you ran into an error and need to reset your repository
+* [The first section](##Updating-and-using-a-Gitlab-repository) will be for updating and using a repository you have already downloaded. 
+* [The second section](##Resolving-errors) will be for resolving and solving errors you run across.
+* [The third section](##Downloading-the-repository) is for downloading the repository for the first time or if you ran into an error and need to reset your repository
 
 ### Please ensure you carefully follow all the steps in the second section to avoid running into errors.
+
+<br>
+
+<hr>
+
+## Updating and using a Gitlab repository
+
+1. Navigate to the folder you cloned down from Gitlab inside your terminal. You must be inside the folder for the next step. Remember this is the folder that was generated when you used the `git clone` command on the url we copied from Gitlab.
+
+![Gitlab Folder](images/11.PNG)
+
+2. Once you're inside the folder, you should be able to `git pull origin master`. This pulls all the updated files down from Github. When you pull, make sure you get one of the two following messages and not an error message of some sort:
+
+![Up to date](images/12.PNG)
+
+![Pulling from Master](images/13.PNG)
+
+If you receive an error (Most likely a merge conflict), then please refer to the [resolving errors section](##Resolving-errors) for instructions.
+
+3. After we've successfully pulled from master, we need to COPY the files from the repository to a working directory. This working directory is where you will keep all the class activities and code drills you work on. If you work on the files in the repository, there will be a merge conflict or another error the next time you try to pull from master.
+
+![Copying Files](images/14.PNG)
+
+4. Now that we've copied the files into a new directory, we're ready to start working! Remember to work with those new files and not the repository.
+
+<br>
+
+<hr>
+
+## Resolving errors
+
+1. Until we learn to deal with merge conflicts or get more practice with Git, the best way to handle errors when pulling down from master is simply to delete the repository and clone it down again.
+
+    * Delete the repository
+
+    ![Delete Repository](images/21.PNG)
+
+    * The follow the instructions to [clone down the repository](##Downloading-the-repository)
+
+    * Remember to copy the files afterwards to a working directory so you're not modifying the files in the directory you cloned down. 
 
 <br>
 
