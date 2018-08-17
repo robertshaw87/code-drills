@@ -8,7 +8,7 @@
 * [The second section](##Resolving-errors) will be for resolving and solving errors you run across.
 * [The third section](##Downloading-the-repository) is for downloading the repository for the first time or if you ran into an error and need to reset your repository
 
-### Please ensure you carefully follow all the steps in the second section to avoid running into errors.
+### Please ensure you carefully follow all the steps in the first section to avoid running into errors.
 
 <br>
 
@@ -16,7 +16,7 @@
 
 ## Updating and using a Gitlab repository
 
-1. Navigate to the folder you cloned down from Gitlab inside your terminal. You must be inside the folder for the next step. Remember this is the folder that was generated when you used the `git clone` command on the url we copied from Gitlab.
+1. Navigate to the folder you cloned down from Gitlab inside your terminal. You must be inside the folder for the next step. If you don't have the folder already cloned down, please refer to the guide for downloading the repository](##Downloading-the-repository)Remember this is the folder that was generated when you used the `git clone` command on the url we copied from Gitlab.
 
 ![Gitlab Folder](images/11.PNG)
 
@@ -26,11 +26,13 @@
 
 ![Pulling from Master](images/13.PNG)
 
-If you receive an error (Most likely a merge conflict), then please refer to the [resolving errors section](##Resolving-errors) for instructions.
+If you receive an error (Most likely a merge conflict), then please refer to the [resolving errors section](##Resolving-errors) for instructions. There are unfortunately quite a few different errors, but one of the most common ones is a merge conflict:
+
+![Merge Conflict](images/14.PNG)
 
 3. After we've successfully pulled from master, we need to COPY the files from the repository to a working directory. This working directory is where you will keep all the class activities and code drills you work on. If you work on the files in the repository, there will be a merge conflict or another error the next time you try to pull from master.
 
-![Copying Files](images/14.PNG)
+![Copying Files](images/15.PNG)
 
 4. Now that we've copied the files into a new directory, we're ready to start working! Remember to work with those new files and not the repository.
 
