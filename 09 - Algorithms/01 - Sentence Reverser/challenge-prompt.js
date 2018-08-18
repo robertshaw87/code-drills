@@ -22,18 +22,50 @@ function reverse(str) {
 
 
 
-// ------------------------------------------------------------------
-console.log("==================== Test 01 ====================");
-var teststr1 = "hello world hello"
-console.log("The following should be \"hello world hello\"");
-console.log(reverse(teststr1));
-// ------------------------------------------------------------------
-console.log("==================== Test 02 ====================");
-var teststr2 = "sentence"
-console.log("The following should be \"sentence\"");
-console.log(reverse(teststr2));
-// ------------------------------------------------------------------
-console.log("==================== Test 03 ====================");
-var teststr3 = "it does not matter how slowly you go as long as you do not stop"
-console.log("The following should be \"stop not do you as long as go you slowly how matter not does it\"");
-console.log(reverse(teststr3));
+// --------------------------- Test Cases ---------------------------
+//
+//
+// ---------------------------- Test 01 -----------------------------
+var teststr1 = "hello world hello";
+$("#output-area").append(`
+  <div class="card m-3">
+    <div class="card-header bg-secondary">
+      <h5 class="text-light">Test 01</h5>
+    </div>
+    <div class="card-body">
+      <p class="text-left">The following should be "hello world hello"</p>
+      <hr class="mb-5">
+      <p class="text-left">${reverse(teststr1)}</p> 
+    </div>
+  </div>
+`)
+
+// ---------------------------- Test 02 -----------------------------
+var teststr2 = "sentence";
+$("#output-area").append(`
+  <div class="card m-3">
+    <div class="card-header bg-secondary">
+      <h5 class="text-light">Test 02</h5>
+    </div>
+    <div class="card-body">
+      <p class="text-left">The following should be "sentence"</p>
+      <hr class="mb-5">
+      <p class="text-left">${reverse(teststr2)}</p> 
+    </div>
+  </div>
+`)
+
+// ---------------------------- Test 03 -----------------------------
+var teststr3 = "it does not matter how slowly you go as long as you do not stop";
+$("#output-area").append(`
+  <div class="card m-3">
+    <div class="card-header bg-secondary">
+      <h5 class="text-light">Test 03</h5>
+    </div>
+    <div class="card-body">
+      <p class="text-left">The following should be "stop not do you as long as go you slowly how matter not does it"</p>
+      <hr class="mb-5">
+      <p class="text-left">${reverse(teststr3)}</p> 
+    </div>
+  </div>
+`)

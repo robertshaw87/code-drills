@@ -19,3 +19,5 @@ For example
 should return
 
 > [2]
+
+* Hint: Use helper functions to seperate out the areas of concern for your function and handle any repeated checks you have to do.

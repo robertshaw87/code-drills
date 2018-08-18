@@ -1,23 +1,40 @@
-// Activity 1
+// Activity 2
 
 
-// Write a function `reverse` that takes in a string of words seperated
-// by spaces and returns a new string that contains those words in
-// reverse order
+// The `primeFactors` function should take in a num and return a sorted Array
+// of all the factors of the number that are also prime numbers.
+
+// -------------------------------------------------------
+//                Helper Functions (Optional)
+//
+// -------------------- Your Code Here --------------------
+
+function checkPrime(num) {
+  for (var i = 2; i <= num/i; i++){
+    if (num % i === 0) {
+      return false
+    }
+  }
+  return true;
+}
+
+// --------------------- End Code Area --------------------
+
 
 
 // ----------------------------------------------------------
-//                      Reverse a Sentence
+//                        Prime Factors
 // ----------------------------------------------------------
-function reverse(str) {
+function primeFactors(num) {
   // -------------------- Your Code Here --------------------
 
-  var tempArr = str.split(" ")
-  var reversedStr = tempArr[0];
-  for (var i=1; i < tempArr.length; i++){
-    reversedStr = tempArr[i] + " " + reversedStr;
+  var factors = [];
+  for (var i = 2; i <= num; i++) {
+    if (num % i === 0 && checkPrime(i)) {
+      factors.push(i);
+    }
   }
-  return reversedStr;
+  return factors;
 
   // --------------------- End Code Area --------------------
 }
@@ -28,46 +45,46 @@ function reverse(str) {
 //
 //
 // ---------------------------- Test 01 -----------------------------
-var teststr1 = "hello world hello";
+var testnum1 = 64;
 $("#output-area").append(`
   <div class="card m-3">
     <div class="card-header bg-secondary">
       <h5 class="text-light">Test 01</h5>
     </div>
     <div class="card-body">
-      <p class="text-left">The following should be "hello world hello"</p>
+      <p class="text-left">The following should be [2]</p>
       <hr class="mb-5">
-      <p class="text-left">${reverse(teststr1)}</p> 
+      <p class="text-left">[${primeFactors(testnum1)}]</p> 
     </div>
   </div>
 `)
 
 // ---------------------------- Test 02 -----------------------------
-var teststr2 = "sentence";
+var testnum2 = 104;
 $("#output-area").append(`
   <div class="card m-3">
     <div class="card-header bg-secondary">
       <h5 class="text-light">Test 02</h5>
     </div>
     <div class="card-body">
-      <p class="text-left">The following should be "sentence"</p>
+      <p class="text-left">The following should be [2,13]</p>
       <hr class="mb-5">
-      <p class="text-left">${reverse(teststr2)}</p> 
+      <p class="text-left">[${primeFactors(testnum2)}]</p> 
     </div>
   </div>
 `)
 
 // ---------------------------- Test 03 -----------------------------
-var teststr3 = "it does not matter how slowly you go as long as you do not stop";
+var testnum3 = 54321;
 $("#output-area").append(`
   <div class="card m-3">
     <div class="card-header bg-secondary">
       <h5 class="text-light">Test 03</h5>
     </div>
     <div class="card-body">
-      <p class="text-left">The following should be "stop not do you as long as go you slowly how matter not does it"</p>
+      <p class="text-left">The following should be [3,19,953]</p>
       <hr class="mb-5">
-      <p class="text-left">${reverse(teststr3)}</p> 
+      <p class="text-left">[${primeFactors(testnum3)}]</p> 
     </div>
   </div>
 `)

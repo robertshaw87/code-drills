@@ -4,22 +4,18 @@
 // In this activity, we're creating a function that counts the
 // number of consonants in a string
 
+
 // -------------------------------------------------------
 //                       Count Consonants
 // -------------------------------------------------------
 function countCons(str) {
   // -------------------- Your Code Here --------------------
-  
-  str = str.toLowerCase();
-  var cons = 'bcdfghjklmnpqrstvwxyz'
-  var numCons = 0;
-  for (var i=0; i<str.length; i++) {
-    if (cons.includes(str[i])) {
-      numCons++;
-    }
-  }
-  return numCons;
-  
+
+
+
+
+
+
   // --------------------- End Code Area --------------------
 }
 
