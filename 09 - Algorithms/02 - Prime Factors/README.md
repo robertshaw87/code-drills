@@ -5,19 +5,18 @@
 
 For example
 
-> primeFactors(33)
+```javascript
+primeFactors(33)
+// should return
+[3, 11]
+```
 
-should return
+and
 
-> [3, 11]
-
-
-For example
-
-> primeFactors(16)
-
-should return
-
-> [2]
+```javascript
+primeFactors(16)
+// should return
+[2]
+```
 
 * Hint: Use helper functions to seperate out the areas of concern for your function and handle any repeated checks you have to do.

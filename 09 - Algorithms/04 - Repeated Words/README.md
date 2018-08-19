@@ -4,10 +4,10 @@
 
 For example
 
-> findRepeats(["Hello", "Yes", "Boat", "Hello", "Kitchen", "Sofa", "Sofa", "Hello", "Boat"])
-
-should return
-
-> ["Boat", "Hello", "Sofa"]
+```javascript
+findRepeats(["Hello", "Yes", "Boat", "Hello", "Kitchen", "Sofa", "Sofa", "Hello", "Boat"])
+// should return
+["Boat", "Hello", "Sofa"]
+```
 
 * If a word is encountered more than twice, it should still only show up once in the returned array

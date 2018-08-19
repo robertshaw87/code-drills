@@ -4,10 +4,10 @@
 
 For example, 
 
-> reverse("hello world goodbye ignorance")
-
-should return
-
-> "ignorance goodbye world hello"
+```javascript
+reverse("hello world goodbye ignorance")
+// should return
+"ignorance goodbye world hello"
+```
 
 * Remember to watch out for extraneous spaces!

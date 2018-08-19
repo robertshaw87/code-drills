@@ -4,8 +4,8 @@
 
 For example
 
-> zipArr([1, 2, 3, 4], [5, 6])
-
-should return
-
-> [6, 8, 3, 4]
+```javascript
+zipArr([1, 2, 3, 4], [5, 6])
+// should return
+[6, 8, 3, 4]
+```
