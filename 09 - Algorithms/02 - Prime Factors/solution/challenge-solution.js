@@ -15,7 +15,7 @@ function checkPrime(num) {
       return false
     }
   }
-  return true;
+  return num !== 1;
 }
 
 // --------------------- End Code Area --------------------

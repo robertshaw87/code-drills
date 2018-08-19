@@ -1,4 +1,4 @@
-// Activity 2
+// Activity 3
 
 
 // The `zipArrays` function should take in two arrays of numbers and

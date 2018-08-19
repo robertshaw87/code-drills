@@ -1,16 +1,16 @@
-// Activity 3
+// Activity 4
 
 
-// The `zipArrays` function should take in two arrays of numbers and
-// add numbers at the same indices together. Return a new array
-// with sums and any unpaired elements.
+// The `findRepeats` function should take in one array of strings and
+// find the strings that are repeated within the argument. Return a new
+// array containing the repeated strings in alphabetical order.
 
 
 
 // ----------------------------------------------------------
-//                        Zipping Arrays
+//                        Repeated Words
 // ----------------------------------------------------------
-function zipArrays(arr1, arr2) {
+function findRepeats(arr) {
   // -------------------- Your Code Here --------------------
 
 
@@ -28,49 +28,46 @@ function zipArrays(arr1, arr2) {
 //
 //
 // ---------------------------- Test 01 -----------------------------
-var test1arr1 = [20,3,45,79];
-var test1arr2 = [2,34,5,6,8,9];
+var testarr1 = ["strong", "abridge", "critic", "beach", "abridge", "strong", "critic"];
 $("#output-area").append(`
   <div class="card m-3">
     <div class="card-header bg-secondary">
       <h5 class="text-light">Test 01</h5>
     </div>
     <div class="card-body">
-      <p class="text-left">The following should be [22,37,50,85,8,9]</p>
+      <p class="text-left">The following should be [abridge,critic,strong]</p>
       <hr class="mb-5">
-      <p class="text-left">[${zipArrays(test1arr1, test1arr2)}]</p> 
+      <p class="text-left">[${findRepeats(testarr1)}]</p> 
     </div>
   </div>
 `)
 
 // ---------------------------- Test 02 -----------------------------
-var test2arr1 = [6,20,43,589];
-var test2arr2 = [];
+var testarr2 = ["boat", "craftsman", "improve", "boat", "improve", "craftsman", "boat", "boat"];
 $("#output-area").append(`
   <div class="card m-3">
     <div class="card-header bg-secondary">
       <h5 class="text-light">Test 02</h5>
     </div>
     <div class="card-body">
-      <p class="text-left">The following should be [6,20,43,589]</p>
+      <p class="text-left">The following should be [boat,craftsman,improve]</p>
       <hr class="mb-5">
-      <p class="text-left">[${zipArrays(test2arr1, test2arr2)}]</p> 
+      <p class="text-left">[${findRepeats(testarr2)}]</p> 
     </div>
   </div>
 `)
 
 // ---------------------------- Test 03 -----------------------------
-var test3arr1 = [67,8,93,4,25];
-var test3arr2 = [4,36,5,78,9];
+var testarr3 = ["package", "bounce", "duck", "basket", "scholar", "baskets", "sport"];
 $("#output-area").append(`
   <div class="card m-3">
     <div class="card-header bg-secondary">
       <h5 class="text-light">Test 03</h5>
     </div>
     <div class="card-body">
-      <p class="text-left">The following should be [71,44,98,82,34]</p>
+      <p class="text-left">The following should be []</p>
       <hr class="mb-5">
-      <p class="text-left">[${zipArrays(test3arr1, test3arr2)}]</p> 
+      <p class="text-left">[${findRepeats(testarr3)}]</p> 
     </div>
   </div>
 `)

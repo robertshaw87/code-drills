@@ -12,11 +12,14 @@
 function reverse(str) {
   // -------------------- Your Code Here --------------------
 
+  // Split the sentence on the spaces in order to seperate the words
   var tempArr = str.split(" ")
-  var reversedStr = tempArr[0];
-  for (var i=1; i < tempArr.length; i++){
-    reversedStr = tempArr[i] + " " + reversedStr;
-  }
+
+  // reverse the array we just made
+  tempArr = tempArr.reverse();
+
+  // join the array together into a string with a space between each element
+  var reversedStr = tempArr.join(" ");
   return reversedStr;
 
   // --------------------- End Code Area --------------------
