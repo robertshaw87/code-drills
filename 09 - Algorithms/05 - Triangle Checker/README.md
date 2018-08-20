@@ -21,3 +21,5 @@ checkTriangle([4, 8, 5])
 // should return
 "Scalene Triangle"
 ```
+
+* Hint: Do not overcomplicate the logic for this one! Keep in mind the scope of the ask.
