@@ -6,7 +6,7 @@
 
 Your success in the previous
 
-You are given 10 stacks of 10 identical coins and an 
+You are given 10 stacks of 10 identical coins and an analytical scale that can tell you the exact weight of 
 
 <hr>
 
