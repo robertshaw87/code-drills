@@ -19,7 +19,6 @@ request(queryURL, function (error, response, body) {
 
       var forecast = JSON.parse(body).list;
 
-      // console.log(forecast[0])
       for (var i=0; i<forecast.length; i++) {
         console.log(forecast[i].dt_txt, forecast[i].main.temp)
       }
