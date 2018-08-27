@@ -1,6 +1,6 @@
 # 
 
-### This is a word problem, so there will be no coding. Just write your answer in `challenge-prompt.md`.
+### This is a word problem, so there will be no coding. Just write your answer in a `challenge-prompt.md` file.
 
 * You have three jars:
     1. An 8 cup capacity jar full of water
