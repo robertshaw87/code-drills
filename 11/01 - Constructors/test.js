@@ -1,4 +1,6 @@
-test = require("./challenge-prompt.js");
+var challengePrompt = require("./challenge-prompt.js");
+var Card = challengePrompt.Card;
+var Deck = challengePrompt.Deck;
 
 // ------------------------------------------------------------------
 console.log("\n==================== Test 01 ====================");

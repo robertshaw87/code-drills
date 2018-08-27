@@ -1,6 +1,6 @@
 # It's all in the cards
 
-### In this activity, we're going to be making a deck of cards using constructor functions.
+### In this activity, we're going to be making a deck of cards using constructor functions. After you've defined your constructor functions, you will be exporting both of them so that you can run the test file.
 
 * There should be two constructors we're defining for this activity: a `Deck` and a `Card`.
 
@@ -12,4 +12,5 @@
     * A `draw` function that draws the top Card of the Deck and returns that Card (this should also remove that Card from the Deck)
     * An `add` function that adds a Card into the Deck and `shuffle`s the Deck afterwards.
 
-* Comment out the test cases if you want to see your function run before you finish. They are there to help you ensure
+* After you've defined your constructor functions, use `module.exports` to export your Card and Deck constructors under the `Card` and `Deck` keys
+    * By exporting your functions, you will be able to run the test.js file in order to see if your solution matches the expected outcomes.
