@@ -13,4 +13,4 @@
     * An `add` function that adds a Card into the Deck and `shuffle`s the Deck afterwards.
 
 * After you've defined your constructor functions, use `module.exports` to export your Card and Deck constructors under the `Card` and `Deck` keys
-    * By exporting your functions, you will be able to run the test.js file in order to see if your solution matches the expected outcomes.
+    * By exporting your functions, you will be able to run the `test.js` file in order to see if your solution matches the expected outcomes.
