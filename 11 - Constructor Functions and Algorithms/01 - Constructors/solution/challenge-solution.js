@@ -9,6 +9,8 @@ function Card(value) {
     this.value = 1;
   }
   this.print = function() {
+    // This is a ternary statement and has the syntax of
+    // <conditional> ? <value if true> : <value if false>
     var printValue = this.value<10 ? "0" + this.value : this.value;
     console.log(`
     -----------
