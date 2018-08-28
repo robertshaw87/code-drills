@@ -12,3 +12,5 @@
 * You cannot pour the water from jars anywhere except into another jar
 
 * By only pouring water back and forth between the three jars, end up with exactly 4 cups of water in either the 8-cup jar or the 5-cup jar.
+
+* Write every pour you have to do inside the `challenge-prompt.md` file
