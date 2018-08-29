@@ -5,6 +5,7 @@
 // This function takes in a string and returns the longest substring that doesn't
 // contain repeated characters
 function longestSubstring(str) {
+  // -------------------- Your Code Here --------------------
 
   // Initialize two variables to keep track of the longest substring so far and the
   // substring we're currently adding to
@@ -42,6 +43,8 @@ function longestSubstring(str) {
 
   // Return the longest substring we've kept track of
   return longest;
+
+  // --------------------- End Code Area --------------------
 }
 
 

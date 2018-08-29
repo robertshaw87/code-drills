@@ -5,17 +5,15 @@
 // This function takes in a string and returns the longest substring that doesn't
 // contain repeated characters
 function longestSubstring(str) {
-
-// -------------------- Your Code Here --------------------
-
+  // -------------------- Your Code Here --------------------
 
 
 
 
 
 
-// --------------------- End Code Area --------------------
 
+  // --------------------- End Code Area --------------------
 }
 
 

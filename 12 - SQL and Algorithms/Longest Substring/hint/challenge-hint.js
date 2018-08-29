@@ -6,6 +6,8 @@
 // contain repeated characters
 function longestSubstring(str) {
 
+  // -------------------- Your Code Here --------------------
+
   // Initialize two variables to keep track of the longest substring so far and the
   // substring we're currently adding to
 

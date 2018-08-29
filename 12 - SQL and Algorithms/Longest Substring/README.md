@@ -4,5 +4,3 @@
 
 * A substring is a smaller section of a string that maintains the order of the characters within that string without skipping any characters
     * For example, "bghfds" is a substring of "abbgfhdss", but "abgfhds" is not.
-
-* 
