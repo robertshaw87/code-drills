@@ -22,7 +22,33 @@ connection.connect(function(err) {
 // -------------------- Your Code Here --------------------
 
 function maxProfit(arr){
+  var bestStock = {
+    maxProfit: arr[1].high - arr[0].low,
+    buyDate: arr[0].date,
+    buyPrice: arr[0].low,
+    sellDate: arr[1].date,
+    sellPrice: arr[1].high
+  };
+  var currMin = {
+    buyDate: arr[0].date,
+    buyPrice: arr[0].low,
+  }
+  for (var i = 1; i < arr.length; i++){
+    var currProfit = arr[i].high - currMin.buyPrice;
+    if (currProfit > bestStock.maxProfit) {
+      bestStock.maxProfit = currProfit;
+      bestStock.buyDate = currMin.buyDate;
+      bestStock.buyPrice = currMin.buyPrice;
+      bestStock.sellDate = arr[i].date;
+      bestStock.sellPrice = arr[i].high;
 
+    }
+    if (arr[i].low < currMin.buyPrice) {
+      currMin.buyDate = arr[i].date;
+      currMin.buyPrice = arr[i].low;
+    }
+  }
+  return bestStock;
 }
 
 // --------------------- End Code Area --------------------
@@ -46,15 +72,3 @@ function getStocks() {
     connection.end();
   })
 }
-
-
-// --------------------------------------------------------
-//                Helper Functions (Optional)
-//
-// -------------------- Your Code Here --------------------
-
-function maxProfit(arr){
-  return arr;
-}
-
-// --------------------- End Code Area --------------------
