@@ -4,6 +4,20 @@
 
 * Look at the `BankOfAmerica.csv` file and create a schema for the data in the `boa` table inside `schema.sql`.
 
-* Use the import wizard in order to import the file into a SQL database
+* Run the schema you've just defined and use the import wizard in order to import the file into the table.
 
-* Create a javascript file that makes a connection to the database and queries it to retrieve the dates and adjusted 
+* Inside `challenge-prompt.js`, configure the connection to your SQL database then customize your query in order to get the date along with the high and low for stock prices.
+
+* Using the 5-day high and low prices, calculate the largest possible profit we could have made per stock over the year.
+
+    * You cannot short stock, so you must buy the stock before you can sell it. This means you cannot just find the lowest price of the stock and the highest price of the stock and find the difference since the lowest price point might occur after the highest price point.
+
+    * Remember that the most profit to be made could have happened before the stock hit its lowest point if there wasn't much growth after the low.
+
+* Console log the date and price to buy the stock at and the date and price to sell the stock at. It should be
+
+```javascript
+
+
+
+```
