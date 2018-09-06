@@ -1,8 +1,9 @@
 # Finding the rotation index
 
-### You are given an array of integers where if you take the front portion of it before the rotation index and the back portion of it after and including the rotation index and create a new array with the back sub-array in front of the front sub-array, you would end up with an array of integers sorted from lowest to highest.
+### The rotation index of an array is the index where if you were to take the front portion of the array before the index and append it onto the back portion of the array after the index, you would end up with a sorted array of numbers from lowest to highest
 
-* Find the rotation index where this occurs.
+* Write a function `rotIndex` that when given an array that has been rotated, returns the rotation index.
+    * Refer to the examples for clarification.
 
 * After you've filled in the logic for the function inside `challenge-prompts.js`, run the test.js file in order to check your output.
 
