@@ -12,6 +12,6 @@
     * One to get all the restaurants stored on the server and return that as a json object
     * One to post a new restaurant as defined by the body of the request to the database
     * One to put the new rating of a restaurant into the database as defined by the restaurant ID and the updated rating within the parameters of the route
-        * This route will not be passed a body, all the relevant information should be in the route
+        * This route will not be passed a body, all the relevant information should be in the route parameters
 
-* 
+* You should only be working within the indicated sections inside the `schema.sql` file inside the data folder and the `server.js` file.

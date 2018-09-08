@@ -16,7 +16,7 @@ var PORT = 3002
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 //Serve up static assets from public
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
 
 
 //======================== HTML ========================
