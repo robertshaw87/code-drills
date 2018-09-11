@@ -11,7 +11,7 @@ function spiralIter(matrix) {
 
 
 
-  
+
 
   // -------------------- End Code Area ---------------------
 }

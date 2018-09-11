@@ -1,4 +1,4 @@
-spiralIter = require("./challenge-prompt.js");
+spiralIter = require("./challenge-solution.js");
 
 
 
