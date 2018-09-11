@@ -6,11 +6,12 @@
 // seperated by a space and you can assume there will not be more than one
 // space between words.
 function reverseWords(str){
-  sentence = str.split(" ");
-  for (var i=0; i<sentence.length; i++) {
-    sentence[i] = sentence[i].split("").reverse().join("");
-  }
-  return sentence.join(" ");
+  // -------------------- Your Code Here --------------------
+
+
+
+
+  // -------------------- End Code Area ---------------------
 }
 
 module.exports = reverseWords;

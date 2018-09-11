@@ -2,7 +2,7 @@
 
 ### `reverseWords` is a function that will take a string as an argument. The string is a sentence of words where each word is seperated from the others by a space. `reverseWords` returns a new sentence where each individual word is reversed, but the order in which the words appear in the sentence isn't changed.
 
-* Reverse the characters within the words without changing the order the words appear
+* Reverse the characters within the words without changing the order of the words in the sentence
 
 * Assume any punctuation is part of the word and will also be reversed
 

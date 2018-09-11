@@ -31,6 +31,8 @@ var firstThree = function() {
       return false;
     }
   }
+// We immediately invoke the function by putting the opening and closing 
+// parenthesis after its definition.
 }()
 // -------------------- End Code Area ---------------------
 
