@@ -33,9 +33,9 @@ function divideThree(num, callback1, callback2, callback3) {
 // as arguments
 function square(num, callback1, callback2, callback3) {
   if (typeof callback1 === "function")
-    callback1(num / 3, callback2, callback3);
+    callback1(num * num, callback2, callback3);
   else
-    console.log(num / 3);
+    console.log(num * num);
 }
 
 // This function subtracts 1 from the number argument passed to it
