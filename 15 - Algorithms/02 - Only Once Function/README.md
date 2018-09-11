@@ -1,6 +1,6 @@
 # Only Once Function
 
-### In this activity, we're going to be writing a function that only does its work the first time it's called. For subsequent invocations, nothing will happen and the function will return null.
+### In this activity, we're going to be writing a function that only does its work the first time it's called. For subsequent invocations, nothing will happen and the function will return null. This and the following 3 code drills are fairly common interview questions, so please try your best!
 
 * Create a function that when called the first time, console logs "I'm RUNNING!" and returns `true`.
 
