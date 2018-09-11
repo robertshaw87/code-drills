@@ -9,4 +9,24 @@ var matrix = [[ 1,  2,  3,  4,  5],
               [16, 17, 18, 19, 20]]
 ```
 
-### The above is a 5 x 4 matrix. There are many ways to iterate through this array, but for this exercise, we will be iterating through the array as a spiral spiralling inward
+### The above is a 5 x 4 matrix. There are many ways to iterate through this array, but for this exercise, we will be writing a function to iterate through the matrix spiralling inward clockwise from the top left corner.
+
+* Write a function that when given a rectangular matrix, iterates through the contents by spiraling inward from the top left corner and returns a new array with the contents in the order of iteration.
+```javascript
+var matrix = [[ 1,  2,  3,  4,  5],
+              [16, 17, 18, 19,  6],
+              [15, 24, 25, 20,  7],
+              [14, 23, 22, 21,  8],
+              [13, 12, 11, 10,  9]]
+
+spiralIter(matrix)
+// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+```
+
+* Start in the top left corner of the matrix and iterate clockwise through the matrix.
+
+* You will be given a rectangular matrix which means every sub-array with have the same length
+    * If the function is passed an empty matrix or a matrix with no entries, the return should be an empty array
+    * The elements are not guaranteed to be in ascending order during the iteration. The example matrix was provided to clearly demonstrate the order of iteration.
+
+* This can be a very challenging exercise, so refer to the hints if you're stuck.
