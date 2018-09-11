@@ -6,15 +6,15 @@
 // If it's not the first time it's invoke, it should do nothing
 // and return null
 function onlyOnce() {
-  // -------------------- Your Code Here --------------------
-
-
-
-
-  // -------------------- End Code Area ---------------------
+  // Reassign the onlyOnce pointer from the current function to a
+  // new function that just returns null
+  onlyOnce = function() {return null};
+  // Console log "I'm RUNNING!"
+  console.log("I'm RUNNING!");
+  // return true
+  return true;
 }
 
-// Small Tests for your convenience
 console.log(onlyOnce())
 console.log(onlyOnce())
 console.log(onlyOnce())

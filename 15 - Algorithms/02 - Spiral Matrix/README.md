@@ -30,3 +30,6 @@ spiralIter(matrix)
     * The elements are not guaranteed to be in ascending order during the iteration. The example matrix was provided to clearly demonstrate the order of iteration.
 
 * This can be a very challenging exercise, so refer to the hints if you're stuck.
+    * Spiral iteration through a matrix is a fairly common concept to test job applicants on, so try your best!
+
+* A `test.js` file has been provided for your convenience.
