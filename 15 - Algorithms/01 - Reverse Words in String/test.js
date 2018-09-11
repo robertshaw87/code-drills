@@ -1,4 +1,4 @@
-reverseWords = require("./challenge-solution.js");
+reverseWords = require("./challenge-prompt.js");
 
 
 // ------------------------------------------------------------------
