@@ -1,6 +1,6 @@
 # Diverse Distribution
 
-### Given an array of numbers where each number is the id of a different book, write a function that splits the books evenly into two piles and returns maximum number of unique books that can be in one of the piles.
+### Given an array of numbers where each number is the id of a different book, write a function that splits the books evenly into two piles and returns the maximum number of unique books that can be in one of the piles.
 
 * Each unique number is an id of a book, but we can have multiple copies of the same book.
 

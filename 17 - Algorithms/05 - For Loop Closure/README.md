@@ -1,1 +1,0 @@
-for loop with set time printing i, fix it so that it will print 1, 2, 3, 4, 5 instead of 6, 6, 6, 6, 6
