@@ -5,16 +5,12 @@
 // and returns the maximum number of unique numbers that can be
 // contained within an even split of the array
 function distribCount(arr) {
-  var numbers = {};
-  var uniqueCount = 0;
-  var splitCount = Math.floor(arr.length / 2);
-  for (var i = 0; i < arr.length; i++) {
-    if (!numbers[arr[i]]) {
-      numbers[arr[i]] = true;
-      uniqueCount++;
-    }
-  }
-  return Math.min(uniqueCount, splitCount);
+  // -------------------- Your Code Here --------------------
+
+
+
+
+  // -------------------- End Code Area ---------------------
 }
 
 var books = [1, 1, 2, 3, 4, 4, 4]
