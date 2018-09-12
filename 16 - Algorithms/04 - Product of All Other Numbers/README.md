@@ -4,6 +4,8 @@
 
 * Assume the argument array has at least 2 elements
 
+* Assume the argument array contains only positive integers
+
 ```javascript
 otherProduct([2, 3, 4, 5])
 // should return

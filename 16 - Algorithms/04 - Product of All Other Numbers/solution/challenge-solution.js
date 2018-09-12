@@ -28,5 +28,5 @@ console.log(otherProduct([2, 3, 4, 5]))
 // Should return [ 2, 1 ]
 console.log(otherProduct([1, 2]))
 
-// Should return [ 672, 0, 0, 0, 0 ]
-console.log(otherProduct([0, 8, 3, 4, 7]))
+// Should return [ 672, 84, 224, 168, 96 ]
+console.log(otherProduct([1, 8, 3, 4, 7]))

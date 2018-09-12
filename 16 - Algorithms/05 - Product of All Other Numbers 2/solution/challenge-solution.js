@@ -6,12 +6,15 @@
 // all the numbers of the argument array except for the element
 // at the index of the current element
 function otherProduct (arr) {
-  // -------------------- Your Code Here --------------------
-
-
-
-
-  // -------------------- End Code Area ---------------------
+  var returnArr = [];
+  var product = 1;
+  for (var i=0; i<arr.length; i++) {
+    product *= arr[i];
+  }
+  for (i=0; i<arr.length; i++) {
+    returnArr.push(product/arr[i])
+  }
+  return returnArr;
 }
 
 // Should return [ 40, 200, 80, 100 ]
