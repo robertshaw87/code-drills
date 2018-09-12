@@ -15,14 +15,21 @@ function keyboardRow(arr) {
   var sameRow = [];
   for (var i = 0; i < arr.length; i++) {
     var currWord = arr[i];
+    // Because we started counting the row from 1, row will be
+    // truthy if the character is a letter
     var row = keyboard[currWord[0]];
-    // we stop the iteration through the word when we hit
+    // We stop the iteration through the word when we hit
     // a letter thats on a different row
     for (var j = 1; j < currWord.length && row; j++) {
+      // If a letter in the word is on a different row from
+      // the first letter, then it fails the test and we set
+      // row to be false
       if (row != keyboard[currWord[j]]) {
         row = false;
       }
     }
+    // If row is still truthy after the iteration, the word
+    // can be typed on the same row
     if (row) {
       sameRow.push(currWord);
     }
