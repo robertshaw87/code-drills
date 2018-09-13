@@ -5,4 +5,4 @@
 * Each call of `setTimeout` must console log the value of `i` when it is created.
 
 * Do not change any code outside of the designated area, which means you're defining the first argument passed to `setTimeout`.
-    * Keep this in mind and remember the activity on closure and immediately invoked functions!
+    * Keep this in mind and remember the tools you used to solve the other activity regarding closure and immediately invoked functions
