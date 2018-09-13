@@ -6,3 +6,5 @@
 
 * Do not change any code outside of the designated area, which means you're defining the first argument passed to `setTimeout`.
     * Keep this in mind and remember the tools you used to solve the other activity regarding closure and immediately invoked functions
+
+* If you need more guidance, refer to the `hint.md` file within the hint folder.
