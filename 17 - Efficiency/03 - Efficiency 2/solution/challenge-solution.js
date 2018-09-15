@@ -10,9 +10,13 @@
 //
 /* --------------- YOUR ANSWER HERE ---------------
 
-  
+Complexity: O(n)
 
-
+Why: Even though there are two for loops each looping
+through something whose size is determined by the argument,
+they occur one after the other instead of nested. We drop
+the coefficient in front of the `n` in time complexity,
+so this function reduces down to O(n)
 
     --------------- END ANSWER AREA ---------------- */
 function evenFibonacci(num) {
@@ -42,9 +46,13 @@ function evenFibonacci(num) {
 //
 /* --------------- YOUR ANSWER HERE ---------------
 
-  
+Complexity: O(n)
 
-
+Why: Even though there are nested for loops, the inner for loop
+iterates through a constant number of elements each time, thus
+it behaves in constant time since it doesn't scale with the
+size of the argument. We could have replaced it with 5 seperate
+statements each adding a slightly different element to the output.
 
    --------------- END ANSWER AREA ---------------- */
 function doodleVowel(arr) {
@@ -70,8 +78,21 @@ function doodleVowel(arr) {
 //
 /* --------------- YOUR ANSWER HERE ---------------
 
+Complexity: O(n) or O(m * n)
 
+Why: This function is slightly complicated and the way to represent
+time complexity changes depending upon how you view the input.
 
+If you view the entire matrix as the input, then it's in
+constant time despite the nested for loops since it's only iterating
+through each value once.
+
+If you view the input as a set of `m` arrays of `n` length each,
+then the time complexity of this function because O(m * n) since the
+length and width of these matrixes are independent of each other.
+
+For this function, either answer is acceptable as long as you explain
+your reasoning. This will change for functions with multiple arguments.
 
 
     --------------- END ANSWER AREA ---------------- */
@@ -115,9 +136,16 @@ function spiralIter(matrix) {
 //
 /* --------------- YOUR ANSWER HERE ---------------
 
-  
+Complexity: O(n * sqrt(n))
 
+Why: We need to iterate through all the possible factors of the
+number and for each of those numbers, we're checking if it's prime
+first instead of after the if-statement, so the time complexity
+of the for loop is O(n * sqrt(n)).
 
+The iteration that comes afterwards is O(n) but because its a lower
+order than O(n * sqrt(n)), we drop it from the representation of
+time complexity.
 
     --------------- END ANSWER AREA ---------------- */
 function sumPrimeFactors(num) {    

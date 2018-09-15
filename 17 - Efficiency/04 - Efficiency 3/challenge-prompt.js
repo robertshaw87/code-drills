@@ -2,7 +2,7 @@
 
 
 
-// -------------------- Question 3 --------------------
+// -------------------- Question 1 --------------------
 //
 // `countCons` takes a string as the argument and returns 
 // the number of consonants in that string.
@@ -29,7 +29,7 @@ function countCons(str) {
 
 
 
-// -------------------- Question 3 --------------------
+// -------------------- Question 2 --------------------
 //
 // `reverse` takes a strings consisting of words seperated
 // by spaces as the argument and returns a new string with
@@ -77,7 +77,8 @@ function anagramCheck (str1, str2) {
 
 
 
-
+// -------------------- Question 4 --------------------
+//
 // This function takes in a string and returns the longest 
 // substring that doesn't contain repeated characters.
 // What is the time complexity of this function? Why?
