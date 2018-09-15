@@ -10,9 +10,21 @@
 //
 /* --------------- YOUR ANSWER HERE ---------------
 
-  
+Complexity: O(n)
 
+Why: While `includes` is O(n) complexity, we're using includes
+on a constant length str so it is constant time for the
+purpose of calculating time complexity in this function.
 
+For clarification, we need to look to the worst case
+scenario: the letter is a vowel and we iterate through
+entire `cons` string. We will always be iterating through
+21 characters even if the argument is 5 million characters, so
+it is essentially a coefficient of 21 in front of O(n).
+
+`toLowerCase` runs in O(n) time since it checks every character
+of the string. But because this runs independent of any other
+iterations, it is just another coefficient we drop.
 
    --------------- END ANSWER AREA ---------------- */
 function countCons(str) {
@@ -38,9 +50,11 @@ function countCons(str) {
 //
 /* --------------- YOUR ANSWER HERE ---------------
 
-  
+Complexity: O(n)
 
-
+Why: The `split`, `reverse`, and `join` methods are all
+O(n) time. Because they're called one after the other, the
+time complexity stays O(n)
 
    --------------- END ANSWER AREA ---------------- */
 function reverse(str) {
@@ -60,9 +74,13 @@ function reverse(str) {
 //
 /* --------------- YOUR ANSWER HERE ---------------
 
+Complexity: O(n*log(n))
 
-
-
+Why: The `replace`, `toLowerCase`, `split`, and `join` methods
+are all O(n). Even when you combine the function call by chaining
+dot notation, they're still called one after the other. However,
+the sort function is O(n*log(n)) so we use that as the time
+complexity of the function.
 
    --------------- END ANSWER AREA ---------------- */
 function anagramCheck (str1, str2) {
@@ -84,9 +102,13 @@ function anagramCheck (str1, str2) {
 //
 /* --------------- YOUR ANSWER HERE ---------------
 
-  
+Complexity: O(n)
 
-
+Why: `indexOf` and `substr` are both O(n), but if we look
+at the maximum size of current, there are only 26 letters
+in the english alphabet, so in the worst case, it's going
+to be a iterating through a string of size 26, even if the
+argument is millions of characters.
 
    --------------- END ANSWER AREA ---------------- */
 function longestSubstring(str) {
