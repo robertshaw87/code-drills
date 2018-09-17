@@ -40,9 +40,9 @@ console.log(nCheckPrime(4));
 // false
 console.log(nCheckPrime(81));
 // true
-console.log(nCheckPrime(57));
+console.log(nCheckPrime(67));
 // true
-console.log(nCheckPrime(91));
+console.log(nCheckPrime(97));
 
 console.log('========================= Question 2 =========================');
 // true
@@ -52,6 +52,6 @@ console.log(logCheckPrime(4));
 // false
 console.log(logCheckPrime(81));
 // true
-console.log(logCheckPrime(57));
+console.log(logCheckPrime(67));
 // true
-console.log(logCheckPrime(91));
+console.log(logCheckPrime(97));
