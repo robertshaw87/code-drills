@@ -24,8 +24,8 @@
     * Increment the `length` of the list afterwards.
 
 * Create a `delete` method that takes in a value as an argument. It will find the first node in the list with the corresponding value and delete it.
-    * Return `this` after you're done in order to facilitate method chaining.
     * If the value passed in as an argument doesn't exist in the list, do nothing.
     * If the value passed in is the `head` or `tail` of the list, make sure to update the corresponding property.
     * Remember to update the `next` pointer of the previous node to be the node after what you deleted
     * Decrement the `length` of the list afterwards.
+    * Return the node you just deleted from the list.
