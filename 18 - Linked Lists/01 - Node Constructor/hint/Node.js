@@ -9,6 +9,8 @@
 // function isn't passed an argument, `value` will
 // default to null
 function Node(value = null) {
+  // -------------------- Your Code Here --------------------
+
   // The default for `value` is null if an argument
   // isn't passed into the constructor
 
@@ -28,6 +30,7 @@ function Node(value = null) {
 
 
 
+  // -------------------- End Code Area ---------------------
 }
 
 // We're going to be using this constructor in our
