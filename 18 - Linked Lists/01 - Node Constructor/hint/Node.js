@@ -10,7 +10,6 @@
 // default to null
 function Node(value = null) {
   // -------------------- Your Code Here --------------------
-
   // The default for `value` is null if an argument
   // isn't passed into the constructor
 

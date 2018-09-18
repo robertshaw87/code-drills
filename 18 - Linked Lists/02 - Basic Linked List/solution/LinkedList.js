@@ -1,6 +1,6 @@
 // Linked List Constructor
+var Node = require("./Node.js");
 
-var Node = require("node.js");
 
 // This constructor function creates a `LinkedList`
 // object that keeps track of the `head` and the
@@ -32,6 +32,11 @@ function LinkedList(value = null) {
   this.getListTail = function () {
     return this.tail;
   }
+  // `'getListLength` returns the number of nodes in
+  // this list
+  this.getListLength = function () {
+    return this.length;
+  }
   // `insertAtHead` takes in an argument and creates
   // a new node with that argument as its value as the
   // new `head` of the list
@@ -39,17 +44,23 @@ function LinkedList(value = null) {
     var newNode = new Node(value);
     newNode.setNext(this.head);
     this.head = newNode;
+    if (this.tail === null) this.tail = newNode;
+    this.length++;
+    return this;
   }
   // `insertAtTail` takes in an argument and creates
   // a new node with that argument as its value as the
   // new `tail` of the list
   this.insertAtTail = function (value) {
     var newNode = new Node(value);
-    this.tail.setNext(newNode);
+    if (this.tail !== null) this.tail.setNext(newNode);
     this.tail = newNode;
+    if (this.head === null) this.head = newNode;
+    this.length++;
+    return this;
   }
 }
 
 // We're going to be adding on to this constructor, so
 // so we will be exporting the constructor for later use
-module.exports = Node;
+module.exports = LinkedList;

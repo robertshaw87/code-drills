@@ -22,11 +22,18 @@
 
 * Create a `getListTail` method that returns the `tail` of the list
 
+* Create a `getListLength` method that returns the `length` of the list, which is also the number of nodes in the list
+
 * Create a `insertAtHead` method that takes in a value, creates a new node with that value, and inserts that node before the `head` node.
     * This should update the `head` to point at the new node and increment the length of the list.
     * The new node should be updated to point at the previous head.
     * If there was no `head`, then set the new node to be both the `head` and the `tail` 
+    * Increment `length` afterwards
+    * This method should return `this` so we can chain methods together such as `currLinkedList.insertAtHead(5).insertAtHead(9)`
 
 * Create a `insertAtTail` method that takes in a value, creates a new node with that value, and inserts that node after the `tail` node.
     * The `tail` should be updatede to point at the new element.
     * This should update the `tail` to point at the new node and increment the length of the list.
+    * Increment `length` afterwards
+    * This method should return `this` so we can chain methods together such as `currLinkedList.insertAtTail(3).insertAtTail(7)`
+
