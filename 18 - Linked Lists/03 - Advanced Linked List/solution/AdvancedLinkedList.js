@@ -2,6 +2,13 @@
 var LinkedList = require("./LinkedList.js");
 var Node = require("./Node.js");
 
+function findPrevious(head, targetNode) {
+  var currNode = head;
+  while (currNode !== null && currNode.getNext() !== targetNode) {
+    currNode = currNode.getNext()
+  }
+  return currNode;
+}
 
 LinkedList.prototype.find = function(value) {
   currNode = this.head;
@@ -21,6 +28,18 @@ LinkedList.prototype.insertAfter = function(value, targetNode) {
   this.length++;
 }
 
-
+LinkedList.prototype.insertBefore = function(value, targetNode) {
+  var newNode = newNode(value);
+  newNode.setNext(targetNode);
+  if (targetNode === this.head) {
+    this.head = newNode;
+    length++;
+  } else {
+    var prevNode = findPrevious(this.head, targetNode)
+    if (prevNode !== null)
+      prevNode.setNext(newNode);
+  }
+  return this;
+}
 
 module.exports = LinkedList;
