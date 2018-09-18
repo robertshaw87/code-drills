@@ -54,17 +54,21 @@ console.log(test1.getListHead() !== test1.getListTail())
 // should be 2
 console.log(test1.getListLength())
 
+
+function displayList(list) {
+  var currNode = list.getListHead();
+  var output = "";
+  while(currNode !== null) {
+    output += currNode.getValue() + " ";
+    currNode = currNode.getNext();
+  }
+  return output;
+}
 console.log("========== Test 6 ==========")
 test1 = new LinkedList();
 for (var i = 0; i < 10; i++) {
   i%2 === 0 ? test1.insertAtHead(i) : test1.insertAtTail(i)
 }
-var currNode = test1.getListHead();
-var output = "" + currNode.getValue();
-for (var i = 1; i < test1.getListLength(); i++) {
-  currNode = currNode.getNext();
-  output += " " + currNode.getValue();
-}
 // Should be 8 6 4 2 0 1 3 5 7 9
-console.log(output)
+console.log(displayList(test1))
 
