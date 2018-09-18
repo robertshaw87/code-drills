@@ -52,7 +52,7 @@ console.log(test1.insertAtHead(4).getListHead().getValue())
 // should be true
 console.log(test1.getListHead() !== test1.getListTail())
 // should be 2
-console.log(test1.getListLength())
+console.log(test1.getListLength());
 
 
 function displayList(list) {
@@ -70,5 +70,5 @@ for (var i = 0; i < 10; i++) {
   i%2 === 0 ? test1.insertAtHead(i) : test1.insertAtTail(i)
 }
 // Should be 8 6 4 2 0 1 3 5 7 9
-console.log(displayList(test1))
+console.log(displayList(test1));
 
