@@ -41,22 +41,38 @@ function LinkedList(value = null) {
   // a new node with that argument as its value as the
   // new `head` of the list
   this.insertAtHead = function (value) {
+    // Create a new node with the value passed as argument
     var newNode = new Node(value);
+    // Set the next node from this node to be the current
+    // head of the linked list
     newNode.setNext(this.head);
+    // Set the new node as the new head of the list
     this.head = newNode;
+    // If there isn't already a tail, set the new node to
+    // also be the tail of the list
     if (this.tail === null) this.tail = newNode;
+    // Increment the length
     this.length++;
+    // Return `this` to allow for chaining methods
     return this;
   }
   // `insertAtTail` takes in an argument and creates
   // a new node with that argument as its value as the
   // new `tail` of the list
   this.insertAtTail = function (value) {
+    // Create a new node with the value passed as argument
     var newNode = new Node(value);
+    // If there is already a tail, set it's next pointer
+    // to be the new node.
     if (this.tail !== null) this.tail.setNext(newNode);
+    // Set the new node to be the new tail of the list
     this.tail = newNode;
+    // If there isn't a head, set the new node as the head
+    // of the list
     if (this.head === null) this.head = newNode;
+    // increment the length
     this.length++;
+    // Return `this` to allow for chaining methods
     return this;
   }
 }

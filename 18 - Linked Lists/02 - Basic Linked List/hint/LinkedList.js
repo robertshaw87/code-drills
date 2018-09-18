@@ -35,16 +35,60 @@ function LinkedList(value = null) {
 
 
 
+  // `'getListLength` returns the number of nodes in
+  // this list
+
+
+
   // `insertAtHead` takes in an argument and creates
   // a new node with that argument as its value as the
   // new `head` of the list
 
+
+    // Create a new node with the value passed as argument
+
+    
+    // Set the next node from this node to be the current
+    // head of the linked list
+
+    
+    // Set the new node as the new head of the list
+
+    
+    // If there isn't already a tail, set the new node to
+    // also be the tail of the list
+
+    
+    // Increment the length
+
+    
+    // Return `this` to allow for chaining methods
 
 
 
   // `insertAtTail` takes in an argument and creates
   // a new node with that argument as its value as the
   // new `tail` of the list
+
+
+    // Create a new node with the value passed as argument
+
+    
+    // If there is already a tail, set it's next pointer
+    // to be the new node.
+
+    
+    // Set the new node to be the new tail of the list
+
+    
+    // If there isn't a head, set the new node as the head
+    // of the list
+
+    
+    // increment the length
+
+
+    // Return `this` to allow for chaining methods
 
 
 
