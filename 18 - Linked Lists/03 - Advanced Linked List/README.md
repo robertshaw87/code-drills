@@ -4,7 +4,7 @@
 
 * Copy your `Node.js` and `LinkedList.js` files from the previous activities into this folder. Our `AdvancedLinkedList.js` fill will be importing it and using constructor you created.
     * If you had trouble with the either of the previous constructors, there are completed ones in the `hint` folder you can use.
-    * For this activity, you should only the methods provided by the `Node` constructor in order to manipulate the values of the node.
+    * For this activity, you should only use the methods provided by the `Node` constructor in order to manipulate the values of the node.
         * You can modify the values of the `LinkedList` constructor
 
 * You will be using the `prototype` property in order to add methods onto your `LinkedList` constructor

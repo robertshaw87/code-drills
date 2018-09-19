@@ -2,7 +2,7 @@
 
 ### In this activity, we're going to be creating a very basic linked list. It will allow you to add to either the head or the tail, but not include any additional methods to add or delete from the list. We will be adding those in a later code drill.
 
-* Copy your `Node.js` file from the previous activity into this folder. Our `LinkedList.js` fill will be importing it and using constructor you created.
+* Copy your `Node.js` file from the previous activity into this folder. Our `LinkedList.js` fill will be importing it and using the constructor you created.
     * If you had trouble with the `Node` constructor, there is a completed one in the `hint` folder you can use.
     * For this activity, you should not access the `value` and `next` of a `Node` and operate on them directly. Instead, use the methods provided by the `Node` constructor in order to manipulate the values of the node.
 

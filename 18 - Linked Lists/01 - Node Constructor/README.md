@@ -12,7 +12,7 @@
     * The `value` should be null for now unless the constructor function is called with an argument, in which case we use the argument as the `value` instead of the default null
     * `next` will be null until we link this `Node` to another one.
 
-* Next, we're going to add some methods to our `Node` object so we're not operating directing on the data stored inside it.
+* Next, we're going to add some methods to our `Node` object so we're not operating directly on the data stored inside it.
     * Add a `getValue` method that returns the value of our node
     * Add a `getNext` method that returns the node `next` points to
     * Add a `setValue` method that stores the argument inside `value`
