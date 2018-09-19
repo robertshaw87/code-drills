@@ -13,7 +13,7 @@ function Stack() {
   // the `push` method takes in a value and adds it to the stack
 
   
-    // insert the new value on the 
+    // insert the new value before the head of the list
 
     
 

@@ -9,7 +9,7 @@ function Stack() {
   this.stack = new LinkedList();
   // the `push` method takes in a value and adds it to the stack
   this.push = function(value) {
-    // insert the new value on the 
+    // insert the new value before the head of the list
     this.stack.insertAtHead(value);
   }
   // the `pop` method removes the most recently added value from

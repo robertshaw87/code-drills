@@ -14,7 +14,7 @@
 
 * Add a method to `pop` the most recently added element of the stack
     * This should return the element and remove it from the stack
-        * This should return the actual element and not the node containing it
+        * This should return the actual value of the element and not the node containing it
     * This should return null if the stack is empty
     
 * Add a method to `peek` at the most recently added element of the stack
