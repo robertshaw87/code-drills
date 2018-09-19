@@ -1,4 +1,4 @@
-# Linked List 2
+# Advanced Linked List
 
 ### In this activity, we're going to be adding more methods onto the basic linked list we created in the previous activity. We will be adding in a search, an insert after, a insert before, and a delete functionality.
 
