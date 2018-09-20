@@ -11,9 +11,11 @@
     * All values should initialize to null.
 
 * Add an `insertBefore` method that takes in a value and a node as arguments. It will create a new `Node` containing the value and insert the new node before the argument node.
+    * If the node being inserted is the first element of the list, it will be both the `head` and the `tail`
     * If the argument node is the `head` of the list, you will have to update the `head` to point to the new node.
     * Remember to update the `left` and `right` pointers of both the new node and the argument node.
 
 * Add an `insertAfter` method that takes in a value and a node as arguments. It will create a new `Node` containing the value and insert the new node after the argument node.
+    * If the node being inserted is the first element of the list, it will be both the `head` and the `tail`
     * If the argument node is the `tail` of the list, you will have to update the `tail` to point to the new node.
     * Remember to update the `left` and `right` pointers of both the new node and the argument node.
