@@ -12,7 +12,3 @@
     * Remember to link the nodes to the left and right of the deleted node together since the node between them is being deleted
     * If the deleted node is the `head` or `tail` of the list, you will have to update the `head` or `tail` key to point to the node to the right or left of the deleted node, respectively
     * If the deleted node is the only node in the list, you will have to set the `head` and the `tail` to be null
-
-* Create a `toArray` method that returns an array representation of the linked list.
-    * You will have to iterate from the `head` of the list to the `tail` of the list while populating the output.
-
