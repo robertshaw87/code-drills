@@ -80,3 +80,9 @@ function DoublyLinkedList() {
     // -------------------- End Code Area ---------------------
   }
 }
+
+
+module.exports = {
+  Node: Node,
+  DoublyLinkedList: DoublyLinkedList
+}
