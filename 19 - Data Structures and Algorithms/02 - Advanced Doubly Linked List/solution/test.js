@@ -1,5 +1,5 @@
 // This is object destructuring. More on this when we cover ES6
-var {Node, DoublyLinkedList} = require("./DoublyLinkedList.js");
+var DoublyLinkedList = require("./AdvancedDoublyLinkedList.js");
 
 
 function displayList(list) {
