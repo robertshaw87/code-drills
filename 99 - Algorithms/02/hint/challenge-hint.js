@@ -23,26 +23,33 @@ function toBinary(num) {
 function binaryDistance(num) {
   // -------------------- Your Code Here --------------------
   // Convert the number to binary
-  var binaryNum = toBinary(num);
+
+  
   // Keep track of the current max distance
-  var maxDistance = 0;
+
+  
   // Keep track of the current distance between numbers
-  var currDistance = 0;
+
+  
   // Iterate through the binary representation
-  for (var i=0; i<binaryNum.length; i++) {
+
+  
     // Since we're looking for the distance between 1s in the bitwise complement, we're essentially looing for the distance between 0s in the original binary representation of the number
     // When we reach a 0 in the binary number
-    if (binaryNum[i] === "0") {
+
+    
       // Set the max distance between 0s to be the higher between the current distance and the previous max distance
-      maxDistance = Math.max(maxDistance, currDistance);
+
+      
       // Reset the current distance
-      currDistance = 0;
-    }
+
+      
     // Increment the current distance before we move on to the next character
-    currDistance++;
-  }
+
+    
   // After we've iterated through the binary representation, return the max distance
-  return maxDistance;
+
+  
   // -------------------- End Code Area ---------------------
 }
 
