@@ -2,7 +2,7 @@
 
 ### In this activity, we're going to be extending the functionality of the doubly linked list constructors you created in the previous activity, much like you did for singly linked lists.
 
-* If you struggled on the previous activity, there is a completed version for you to use in the hint folder.
+* If you struggled on the previous activity, there is a completed version for you to use in the hint folder; otherwise, copy over your `DoublyLinkedList.js` file from the previous activity.
     * Fill out the `AdvancedDoublyLinkedList.js` file and add more methods to the DoublyLinkedList constructor using the `prototype` property
 
 * Create a `find` method that when given a value as an argument, iterates through the list starting from the head and returns the node that contains the target value.

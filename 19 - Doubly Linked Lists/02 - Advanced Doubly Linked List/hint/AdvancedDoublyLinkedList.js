@@ -23,7 +23,7 @@ DoublyLinkedList.prototype.find = function (value) {
   // If we iterate through the entire list without finding the target node, return null
 
   
-
+  // -------------------- End Code Area ---------------------
 }
 
 
