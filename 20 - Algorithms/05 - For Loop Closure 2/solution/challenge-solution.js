@@ -27,7 +27,7 @@ function delayedPrint() {
         return function() {
           console.log(captureValue);
         }
-      // Parenthesis mean the anonymous function we just defined 
+      // Parentheses mean the anonymous function we just defined 
       // is immediately invoked, therefor it uses the current
       // value of `i` since it's not waiting until after the
       // for loop in order to execute.
