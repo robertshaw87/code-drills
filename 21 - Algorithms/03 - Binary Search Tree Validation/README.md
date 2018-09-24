@@ -18,4 +18,5 @@
     * In the above example if you're only looking at the node `5`, it is valid because 2 is less than 5 and 14 is greater than 5, but when you look above, 14 is greater than 10, so it doesn't belong to the left of it.
 
 * You should be able to solve this problem in O(n) time
+    * You don't have to iterate through the rest of the tree for each node
     * This requires either recursion or creating a stack (or queue) of values to iterate through.
