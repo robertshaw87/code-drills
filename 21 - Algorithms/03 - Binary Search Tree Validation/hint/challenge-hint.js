@@ -128,7 +128,7 @@ test.insert(new Node(7))
 test.insert(new Node(2))
 console.log(test.validate());
 
-console.log("========== Test 3 ==========")
+console.log("========== Test 4 ==========")
 var brokenNode = new Node(18);
 brokenNode.left = new Node(2);
 brokenNode.right = new Node(20);
