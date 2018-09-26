@@ -12,3 +12,13 @@ function makeChange(cents) {
   
   // -------------------- End Code Area ---------------------
 }
+
+/* Should be
+{
+  quarters: 8,
+  dimes: 1,
+  nickels: 1,
+  pennies: 4
+}
+*/
+console.log(makeChange(219));

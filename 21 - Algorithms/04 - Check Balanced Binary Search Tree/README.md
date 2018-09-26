@@ -28,3 +28,6 @@
     2
 ```
 * The above tree is not balanced because the height of the left child of `7` is 2, but the height of the right child of `7` is 0 which is a difference greater than 1.
+
+* There is room provided for a helper function if you wish to solve this problem recursively by checking if each node is balanced.
+    * Remember to take into account the heights of the children of that node because even if a node is balanced, it might be much longer or shorter than a sibling node.

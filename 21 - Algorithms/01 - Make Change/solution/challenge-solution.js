@@ -17,3 +17,14 @@ function makeChange(cents) {
   // return the final coins object
   return coins;
 }
+
+
+/* Should be
+{
+  quarters: 8,
+  dimes: 1,
+  nickels: 1,
+  pennies: 4
+}
+*/
+console.log(makeChange(219));
