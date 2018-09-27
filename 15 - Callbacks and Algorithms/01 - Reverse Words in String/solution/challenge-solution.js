@@ -6,7 +6,7 @@
 // seperated by a space and you can assume there will not be more than one
 // space between words.
 function reverseWords(str){
-  sentence = str.split(" ");
+  var sentence = str.split(" ");
   for (var i=0; i<sentence.length; i++) {
     sentence[i] = sentence[i].split("").reverse().join("");
   }
