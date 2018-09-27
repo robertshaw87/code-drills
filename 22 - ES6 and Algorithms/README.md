@@ -5,4 +5,5 @@
 * Arrow notation `() => {}`
 * Object destructuring `[...variable]` and `{...variable}`
 * Array methods
+* Iteration
 * Algorithms
