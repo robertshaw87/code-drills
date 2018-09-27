@@ -26,4 +26,4 @@
 // --------------------- End Code Area --------------------
 
 
-export default upDownSort;
+module.exports = upDownSort;
