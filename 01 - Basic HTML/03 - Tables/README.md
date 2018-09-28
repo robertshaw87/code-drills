@@ -2,7 +2,7 @@
 
 ### We'll be adding multiple tables to our page in this activity. Tables are a good way to organize information for the user. If you got stuck in the previous activity, you can work off the html file in the hint folder. ###
 
-1. Use the <hr> tag to seperate the tables we're about to make from the rest of the page
+1. Use the `<hr>` tag to seperate the tables we're about to make from the rest of the page
 
 2. Create a new table and add a heading for the table we're about to create. Label it as our `Work Experience`.
 
