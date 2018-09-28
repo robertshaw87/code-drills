@@ -30,7 +30,7 @@ const person = ({name, location, age}) => {
   return `Hello, my name is ${name}. I am ${age} years old, and I am from ${location}.`;
 }
 
-console.log("\n========== Question 03 ==========");
+console.log("\n========== Question 02 ==========");
 const temp = {
   name: "John",
   location: "Anytown, USA",

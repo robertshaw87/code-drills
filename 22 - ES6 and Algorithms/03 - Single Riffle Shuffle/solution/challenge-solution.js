@@ -22,7 +22,7 @@ const checkShuffle = (deck, half1, half2) => {
     } else 
       isRiffle = false;
   });
-  // If the variable we've using to keep track of the riffle shuffle validity is true and we've reached the end of both halves, return true
+  // If the variable we're using to keep track of the riffle shuffle validity is true and we've reached the end of both halves, return true
   // Return false otherwise
   return (isRiffle && (index1 === half1.length) && (index2 === half2.length))
 }

@@ -30,7 +30,7 @@
     // If neither of the above are true, then the deck is not a valid single riffle shuffle, so we will set the variable we have keeping track of the riffle shuffle validity to false
 
     
-  // If the variable we've using to keep track of the riffle shuffle validity is true and we've reached the end of both halves, return true
+  // If the variable we're using to keep track of the riffle shuffle validity is true and we've reached the end of both halves, return true
   // Return false otherwise
 
   
