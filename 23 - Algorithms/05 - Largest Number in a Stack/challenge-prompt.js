@@ -5,48 +5,50 @@
 class Stack {
   constructor() {
     // -------------------- Your Code Here --------------------
-    // Instantiate two arrays, one to keep track of the stack and one to keep track of the current maximum number and all the previous maximum numbers
-    this.stack = [];
-    this.max = [];
+    
+
+
+    
     // --------------------- End Code Area --------------------
   }
 
   // Inserts the given value into the stack
   push(value) {
     // -------------------- Your Code Here --------------------
-    // Push the value into the stack
-    this.stack.push(value);
-    // If the maximum value stack is empty or the value is larger than the top element of the maximum element stack, put the value into that stack
-    if (this.max.length === 0 || value >= this.max[this.max.length - 1])
-      this.max.push(value);
+    
+    
+
+    
     // --------------------- End Code Area --------------------
   }
 
   // Returns the top element of the stack without removing it
   peek() {
     // -------------------- Your Code Here --------------------
-    return this.stack[this.stack.length - 1];
+
+
+
+    
     // --------------------- End Code Area --------------------
   }
 
   // Removes and returns the top element of the stack
   pop() {
     // -------------------- Your Code Here --------------------
-    // Pop the top element of the stack
-    const elem = this.stack.pop();
-    // If the element is the current maximum, pop it out of the maximum value stack
-    if (elem === this.max[this.max.length - 1])
-      this.max.pop();
-    // Return the popped element
-    return elem;
+    
+    
+
+
     // --------------------- End Code Area --------------------
   }
 
   // Returns the largest value within the stack without removing it
   getMax() {
     // -------------------- Your Code Here --------------------
-    // Return the top element of the maximum value stack
-    return this.max[this.max.length - 1]
+    
+    
+    
+    
     // --------------------- End Code Area --------------------
   }
 }
