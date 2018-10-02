@@ -3,7 +3,7 @@
 
 
 // `matchParenthesis` takes in a string and the index of an opening parenthesis and returns the index of the parenthesis that corresponds to the parenthesis given
-matchParenthesis = (str, index) => {
+const matchParenthesis = (str, index) => {
   // -------------------- Your Code Here --------------------
   // If the character at the given index isn't an opening parenthesis, return null
 
